@@ -1,0 +1,643 @@
+
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon.png">
+    <title>Dashboard - GetDP</title>
+    <meta name="description" content="Welcome to Dashboard on GetDP. Here you can manage created DP banners, edit them and create new one"/>
+    <link rel="canonical" href="https://getdp.co/app"/>
+    <meta property="og:title" content="Dashboard - GetDP"/>
+    <meta property="og:type" content="summary_large_image"/>
+    <meta property="og:image" content="https://getdp.co/img/banner.jpg"/>
+    <meta property="og:url" content="https://getdp.co/app"/>
+    <meta property="og:description" content="Welcome to Dashboard on GetDP. Here you can manage created DP banners, edit them and create new one"/>
+    <meta property="og:locale" content="en_US"/>
+
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:description" content="Welcome to Dashboard on GetDP. Here you can manage created DP banners, edit them and create new one"/>
+    <meta name="twitter:title" content="Dashboard - GetDP"/>
+    <meta name="twitter:image" content="https://getdp.co/img/banner.jpg"/>
+    <meta name="twitter:url" content="https://getdp.co/app"/>
+	
+	            <link rel="stylesheet" href="css/chartist.min.css">
+			    <!-- Custom CSS -->
+    <link href="https://getdp.co/font.css?font=Overpass" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <link href="https://getdp.co/assets/libs/jquery-select-areas/resources/jquery.selectareas.ie8.css" media="screen"
+          rel="stylesheet"
+          type="text/css"/>
+    <![endif]-->
+    <link href="css/larsseiet-style.css" rel="stylesheet" type="text/css">
+	    <link href="css/bundle.css" rel="stylesheet">
+    <style>
+        .nav-tabs > li {
+            border-top: 3px solid transparent;
+        }
+        .nav-tabs > li > a {
+            display: block;
+            border: none;
+            color: #666;
+            padding: 10px 15px;
+            position: relative;
+            text-decoration: none !important;
+        }
+        .nav-tabs > li > a.active, .nav-tabs > li > a:hover {
+            border: none;
+            color: #4285F4 !important;
+            background: transparent;
+        }
+        .nav-tabs > li > a::after {
+            content: "";
+            background: #4285F4;
+            height: 2px;
+            position: absolute;
+            width: 100%;
+            left: 0px;
+            top: -3px;
+            transition: all 250ms ease 0s;
+            transform: scale(0);
+        }
+        .nav-tabs > li > a.active::after, .nav-tabs > li:hover > a::after {
+            transform: scale(1);
+        }
+        .tab-nav > li > a::after {
+            background: #21527d none repeat scroll 0% 0%;
+            color: #fff;
+        }
+        .tab-pane {
+            /*padding: 15px 0;*/
+        }
+        .tab-content {
+            padding: 20px
+        }
+        .card {
+            background: #FFF none repeat scroll 0% 0%;
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+            margin-bottom: 30px;
+        }
+        .box-image img {
+            width: 100%;
+        }
+        .hidden {
+            display: none;
+        }
+        .mdi {
+            position: relative;
+            top: 1px;
+        }
+        .adsbygoogle {
+            min-height: 10px;
+        }
+        ins.adsbygoogle {
+            min-width: 300px;
+            min-height: 50px;
+        }
+    </style>
+	
+	    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132771790-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'UA-132771790-1');
+    </script>
+	
+</head>
+
+<body>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.3&appId=2341538476058014&autoLogAppEvents=1"></script>
+
+<div class="preloader">
+    <div class="lds-ripple">
+        <div class="lds-pos"></div>
+        <div class="lds-pos"></div>
+    </div>
+</div>
+<div id="main-wrapper" data-navbarbg="skin1" data-theme="light" data-layout="vertical" data-sidebartype="full"
+     data-sidebar-position="fixed" data-header-position="fixed"
+     data-boxed-layout="full">
+    <header class="topbar" data-navbarbg="skin1">
+        <nav class="navbar top-navbar navbar-expand-md navbar-light">
+            <div class="navbar-header" data-logobg="skin6">
+                <a class="nav-toggler waves-effect waves-light d-block d-md-none" href="javascript:void(0)">
+                    <i class="ti-menu ti-close"></i>
+                </a>
+                <div class="navbar-brand">
+                    <a href="https://getdp.co/" class="logo">
+                        <span class="logo-text">
+                                
+                                <img src="img/logo-text.png" alt="homepage"
+                                     class="dark-logo"/>
+                           
+                                <img src="img/logo-light-text.png" class="light-logo"
+                                     alt="homepage"/>
+                            </span>
+                    </a>
+                </div>
+                <a class="topbartoggler d-block d-md-none waves-effect waves-light" href="javascript:void(0)"
+                   data-toggle="collapse" data-target="#navbarSupportedContent"
+                   aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="ti-more"></i>
+                </a>
+            </div>
+            <div class="navbar-collapse collapse" id="navbarSupportedContent" data-navbarbg="skin6">
+                <ul class="navbar-nav float-left mr-auto">
+                    <li class="nav-item search-box">
+                        <a class="nav-link waves-effect waves-dark" href="javascript:void(0)" style="min-width: 200px;">
+                            <div class="d-flex align-items-center">
+                                <i class="mdi mdi-magnify font-20 mr-1"></i>
+                                <div class="ml-1 d-none d-sm-block">
+                                    <span>Search</span>
+                                </div>
+                            </div>
+                        </a>
+                        <form class="app-search position-absolute" action="https://getdp.co/app/banners">
+                            <input type="text" class="form-control" placeholder="Search &amp; enter" name="q">
+                            <a class="srh-btn">
+                                <i class="ti-close"></i>
+                            </a>
+                        </form>
+                    </li>
+                </ul>
+                <ul class="navbar-nav float-right">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle waves-effect waves-dark pro-pic" href=""
+                           data-toggle="dropdown">
+                            <img src="img/user.png" alt="user"
+                                 class="rounded-circle"
+                                 width="40">
+                            <span class="m-l-5 font-medium d-none d-sm-inline-block">David Orizu                                <i class="mdi mdi-chevron-down"></i></span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right user-dd animated flipInY">
+                            <div class="profile-dis scrollable">
+                                <br>
+                                <a class="dropdown-item" href="https://getdp.co/profile">
+                                    <i class="mdi mdi-account-box-outline m-r-5 m-l-5"></i> My Profile</a>
+                                <a class="dropdown-item" href="https://getdp.co/logout">
+                                    <i class="mdi mdi-logout-variant m-r-5 m-l-5"></i>
+                                    Logout
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <aside class="left-sidebar" data-sidebarbg="skin6">
+        <div class="scroll-sidebar">
+            <nav class="sidebar-nav">
+                <br>
+                <ul id="sidebarnav">
+                    <li class="sidebar-item">
+                        <a class="sidebar-link waves-effect waves-dark active"
+                           href="index.html">
+                            <i class="mdi mdi-view-dashboard"></i>
+                            <span class="hide-menu">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-link has-arrow waves-effect waves-dark "
+                           href="banners/all-banners.html">
+                            <i class="mdi mdi-cards-variant"></i>
+                            <span class="hide-menu">Banners</span>
+                        </a>
+                        <ul class="collapse first-level ">
+                            <li class="sidebar-item">
+                                <a href="banners/all-banners.html" class="sidebar-link">
+                                    <i class="mdi mdi-cards-variant"></i>
+                                    <span class="hide-menu">All Banners</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="banners/create-new.html" class="sidebar-link">
+                                    <i class="mdi mdi-plus-box"></i>
+                                    <span class="hide-menu"> Create New </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-link waves-effect waves-dark "
+                           href="profile.html">
+                            <i class="mdi mdi-account-box-outline"></i>
+                            <span class="hide-menu">Profile</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-link waves-effect waves-dark" target="_blank"
+                           href="https://community.inbranded.co/c/getdp/5">
+                            <i class="mdi mdi-account-multiple-outline"></i>
+                            <span class="hide-menu">Join the community <i class="fa fa-external-link-alt" style="font-size: .8em;text-align: left;"></i></span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-link waves-effect waves-dark" href="https://getdp.co/logout">
+                            <i class="menu-icon mdi mdi-logout-variant"></i>
+                            <span class="hide-menu">Logout</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+    <div class="page-wrapper">
+		            <div class="container-fluid" style="padding-top: 0;padding-bottom: 0;min-height: unset;">
+                <br>
+                <div class="gads with-margin">
+							 <center>
+            <div class="d-none d-xl-block">
+                <!-- XL Desktop View -->
+				 		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- XS Leaderboard -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:970px;height:250px"
+     data-ad-client="ca-pub-3505820529714732"
+     data-ad-slot="1553491410"></ins>
+<script>
+window.addEventListener( 'load', function(){
+(adsbygoogle = window.adsbygoogle || []).push({});
+})
+</script>
+            </div>
+            <div class="d-none d-lg-block d-xl-none">
+                <!-- Desktop View -->
+				<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Desktop Leaderboard -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-3505820529714732"
+     data-ad-slot="9480028994"></ins>
+<script>
+window.addEventListener( 'load', function(){
+(adsbygoogle = window.adsbygoogle || []).push({});
+})
+</script>
+            </div>
+            <div class="d-block d-lg-none">
+                <!-- Mobile View -->
+						<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Leaderboard Responsive Ad Unit -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3505820529714732"
+     data-ad-slot="8935710888"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+window.addEventListener( 'load', function(){
+(adsbygoogle = window.adsbygoogle || []).push({});
+})
+</script>
+            </div>
+        </center>                </div>
+            </div>
+		  
+      <div class="page-breadcrumb">
+        <div class="row">
+            <div class="col-5 align-self-center">
+                <h4 class="page-title">Dashboard
+
+                    <a class="btn btn-primary btn-sm" href="https://getdp.co/app/banner/new" role="button">
+                        <i class="mdi mdi-plus-box"></i>
+                        New DP Banner
+                    </a>
+                </h4>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="card-group">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="d-flex no-block align-items-center">
+                                <div>
+                                    <i class="mdi mdi-cards-variant font-20 text-muted"></i>
+                                    <p class="font-16 m-b-5">Total DP Banners</p>
+                                </div>
+                                <div class="ml-auto">
+                                    <h1 class="font-light text-right">0</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="progress">
+                                <div class="progress-bar bg-info" role="progressbar"
+                                     style="width: 75%; height: 6px;" aria-valuenow="25" aria-valuemin="0"
+                                     aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="d-flex no-block align-items-center">
+                                <div>
+                                    <i class="mdi mdi-poll font-20  text-muted"></i>
+                                    <p class="font-16 m-b-5">Total Traffic</p>
+                                </div>
+                                <div class="ml-auto">
+                                    <h1 class="font-light text-right"></h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar"
+                                     style="width: 60%; height: 6px;" aria-valuenow="25" aria-valuemin="0"
+                                     aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="d-flex no-block align-items-center">
+                                <div>
+                                    <i class="mdi mdi-account-check font-20 text-muted"></i>
+                                    <p class="font-16 m-b-5">Total Usage</p>
+                                </div>
+                                <div class="ml-auto">
+                                    <h1 class="font-light text-right"></h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="progress">
+                                <div class="progress-bar bg-purple" role="progressbar"
+                                     style="width: 65%; height: 6px;" aria-valuenow="25" aria-valuemin="0"
+                                     aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <div>
+                                <h4 class="card-title">Weekly Usage Info</h4>
+                            </div>
+                        </div>
+                        <span id="statData" class="hidden"
+                              data-label='[]'
+                              data-usage='[]'
+                              data-traffic='[]'></span>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="users" role="tabpanel"
+                                 aria-labelledby="pills-home-tab">
+                                <div class="sales ct-charts m-t-30"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3" style="max-width: 150px;">
+                                    <div class="clearfix">
+                                        <span class="pull-left">Traffic</span>
+                                    </div>
+                                    <div class="progress xs">
+                                        <div class="progress-bar" style="width: 100%;background: #137eff"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3" style="max-width: 150px;">
+                                    <div class="clearfix">
+                                        <span class="pull-left">Usage</span>
+                                    </div>
+                                    <div class="progress xs">
+                                        <div class="progress-bar progress-bar-green"
+                                             style="width: 100%;background: #c9d9ea;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--<footer class="footer text-center">-->
+<!--    Made with <i class="mdi mdi-heart text-danger"></i> by-->
+<!--    <a href="https://workprofile.co/odufuwa_segun" target="_blank">Segun</a>. All Rights Reserved-->
+<!--</footer>-->
+    <div class="container-fluid" style="padding-top: 0;padding-bottom: 0;min-height: unset;">
+        <div class="gads with-margin">
+					<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Responsive Ad Unit -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3505820529714732"
+     data-ad-slot="3611285915"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+window.addEventListener( 'load', function(){
+(adsbygoogle = window.adsbygoogle || []).push({});
+})
+</script>        </div>
+        <br><br><br>
+    </div>
+	
+	<div class="footer-sticky">
+	<style>
+	.footer-sticky{position:fixed;background: #fff; bottom: 0;left: 0; right: 0; height: auto; z-index: 999;max-height: 130px !important;border-top: 1px solid #f1f1f1;display: none;}
+	/*.footer-sticky{padding-bottom: 10px;}*/
+	.footer-sticky .wrap{position:relative;margin: 10px auto !important;}
+	.footer-sticky .mobile{display: none;}
+	.footer-sticky .desktop{display: block;}
+	.footer-sticky 	.sticky-close{position:absolute;top: 0;right: 5px; background: #f1f1f1;border-radius: 50%;border: 1px solid #b3b3b3; padding: 0 !important;}
+	.footer-sticky 	.sticky-close{width: 25px; height: 25px; line-height: 1; vertical-align: middle;cursor:pointer;}
+	@media(max-width: 768px){
+	.footer-sticky .mobile{display: block;}
+	.footer-sticky .desktop{display: none;}
+	}
+	</style>
+	<div class="wrap">
+		<button class="sticky-close" type="button">&times;</button>
+		<div class="desktop">
+			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+			<!-- Footer Sticky Desktop -->
+			<ins class="adsbygoogle"
+			     style="display:inline-block;width:728px;height:90px"
+			     data-ad-client="ca-pub-3505820529714732"
+			     data-ad-slot="6370313175"></ins>
+			<script>
+			     (adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+		</div>
+		<div class="mobile">
+			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+			<!-- Footer Sticky Mobile Ad -->
+			<ins class="adsbygoogle"
+			     style="display:inline-block;width:320px;height:50px"
+			     data-ad-client="ca-pub-3505820529714732"
+			     data-ad-slot="3672638274"></ins>
+			<script>
+			     (adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+		</div>
+	</div>
+</div>
+<footer class="footer bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+                <ul class="list-inline mb-2">
+                    <li class="list-inline-item">
+                        <a href="https://getdp.co/about">About</a>
+                    </li>
+                    <li class="list-inline-item">&sdot;</li>
+                    <li class="list-inline-item">
+                        <a href="http://workprofile.co/odufuwa_segun" target="_blank">Contact</a>
+                    </li>
+                    <li class="list-inline-item">&sdot;</li>
+                    <li class="list-inline-item">
+                        <a href="https://getdp.co/terms">Terms of Use</a>
+                    </li>
+                    <li class="list-inline-item">&sdot;</li>
+                    <li class="list-inline-item">
+                        <a href="https://getdp.co/privacy">Privacy Policy</a>
+                    </li>
+                </ul>
+                <p class="text-muted small mb-4 mb-lg-0">
+                    &copy; GetDP 2021. All Rights Reserved. All Rights Reserved
+                </p>
+            </div>
+            <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+                <ul class="list-inline mb-0">
+                    <li class="list-inline-item mr-3">
+                        <a href="#">
+                            <i class="fab fa-facebook fa-2x fa-fw"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item mr-3">
+                        <a href="http://twitter.com/getdpdotco">
+                            <i class="fab fa-twitter-square fa-2x fa-fw"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="http://instagram.com/getdp">
+                            <i class="fab fa-instagram fa-2x fa-fw"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+</div>
+
+    <script src="js/bundle.min.js"></script>
+    <script>
+        var sentry_options = {
+            dsn: 'https://062cd05459b8436cb7163e0319fe43b7@sentry.io/1727059',
+            whitelistUrls: ['https://getdp.co/',],
+        };
+        // Sentry.init(sentry_options);
+    </script>
+	
+<script src="js/jquery.min.js"></script>
+<!-- Bootstrap tether Core JavaScript -->
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script src="js/sparkline.js"></script>
+<script src="js/waves.js"></script>
+<script src="js/sidebarmenu.js"></script>
+<script src="js/custom.min.js"></script>
+<script>
+    // $(document).ready(function () {
+    //     (adsbygoogle = window.adsbygoogle || []).push({});
+    // });
+    $(function () {
+        var footer_sticky = $('.footer-sticky');
+        if (footer_sticky.length > 0) {
+            footer_sticky.find('.sticky-close').click(function () {
+                footer_sticky.addClass('hidden');
+            });
+            $(document).scroll(function () {
+                var is_mob = false;
+                var scroll_top = $(this).scrollTop();
+
+                if ($(window).width() < 960) {
+                    is_mob = true;
+                }
+                var scroll_height = is_mob ? 120 : 300;
+
+                if (scroll_top > scroll_height + 50) {
+                    footer_sticky.show();
+                } else {
+                    footer_sticky.hide();
+                }
+            });
+        }
+    });
+</script>
+        <script src="js/chartist.min.js"></script>
+	        <script src="js/chartist-plugin-tooltip.min.js"></script>
+	<script>$(function () {
+    let statDataEle = $('#statData');
+    let statLabel = JSON.parse(statDataEle.attr('data-label'));
+    let statUsage = JSON.parse(statDataEle.attr('data-usage'));
+    let statTraffic = JSON.parse(statDataEle.attr('data-traffic'));
+
+
+    let chart = new Chartist.Line('.sales', {
+        labels: statLabel,
+        series: [
+            statUsage,
+            statTraffic
+        ]
+    }, {
+        axisX: {
+            // offset:30,
+            position: 'end',
+            labelOffset: {
+                x: -20,
+                y: 10
+            }
+        },
+        showArea: true,
+        fullWidth: true,
+        plugins: [
+            Chartist.plugins.tooltip()
+        ],
+        axisY: {
+            onlyInteger: true,
+            scaleMinSpace: 40,
+            offset: 20,
+            labelInterpolationFnc: function (value) {
+                return value;
+            }
+        },
+    });
+})</script></body>
+</html>

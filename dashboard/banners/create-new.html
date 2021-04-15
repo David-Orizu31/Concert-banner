@@ -1,0 +1,2125 @@
+
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../../images/favicon.png">
+    <title>Create New - GetDP</title>
+    <meta name="description" content="Welcome to Dashboard on GetDP. Here you can manage created DP banners, edit them and create new one"/>
+    <link rel="canonical" href="https://getdp.co/app/banners/new"/>
+    <meta property="og:title" content="Dashboard - GetDP"/>
+    <meta property="og:type" content="summary_large_image"/>
+    <meta property="og:image" content="https://getdp.co/img/banner.jpg"/>
+    <meta property="og:url" content="https://getdp.co/app"/>
+    <meta property="og:description" content="Welcome to Dashboard on GetDP. Here you can manage created DP banners, edit them and create new one"/>
+    <meta property="og:locale" content="en_US"/>
+
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:description" content="Welcome to Dashboard on GetDP. Here you can manage created DP banners, edit them and create new one"/>
+    <meta name="twitter:title" content="Dashboard - GetDP"/>
+    <meta name="twitter:image" content="https://getdp.co/img/banner.jpg"/>
+    <meta name="twitter:url" content="https://getdp.co/app"/>
+	
+	            <link rel="stylesheet" href="css/chartist.min.css">
+			    <!-- Custom CSS -->
+    <link href="https://getdp.co/font.css?font=Overpass" rel="stylesheet">
+    <link href="../css/styles.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <link href="https://getdp.co/assets/libs/jquery-select-areas/resources/jquery.selectareas.ie8.css" media="screen"
+          rel="stylesheet"
+          type="text/css"/>
+    <![endif]-->
+    <link href="../css/larsseiet-style.css" rel="stylesheet" type="text/css">
+	    <link href="../css/bundle.css" rel="stylesheet">
+    <style>
+        .nav-tabs > li {
+            border-top: 3px solid transparent;
+        }
+        .nav-tabs > li > a {
+            display: block;
+            border: none;
+            color: #666;
+            padding: 10px 15px;
+            position: relative;
+            text-decoration: none !important;
+        }
+        .nav-tabs > li > a.active, .nav-tabs > li > a:hover {
+            border: none;
+            color: #4285F4 !important;
+            background: transparent;
+        }
+        .nav-tabs > li > a::after {
+            content: "";
+            background: #4285F4;
+            height: 2px;
+            position: absolute;
+            width: 100%;
+            left: 0px;
+            top: -3px;
+            transition: all 250ms ease 0s;
+            transform: scale(0);
+        }
+        .nav-tabs > li > a.active::after, .nav-tabs > li:hover > a::after {
+            transform: scale(1);
+        }
+        .tab-nav > li > a::after {
+            background: #21527d none repeat scroll 0% 0%;
+            color: #fff;
+        }
+        .tab-pane {
+            /*padding: 15px 0;*/
+        }
+        .tab-content {
+            padding: 20px
+        }
+        .card {
+            background: #FFF none repeat scroll 0% 0%;
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+            margin-bottom: 30px;
+        }
+        .box-image img {
+            width: 100%;
+        }
+        .hidden {
+            display: none;
+        }
+        .mdi {
+            position: relative;
+            top: 1px;
+        }
+        .adsbygoogle {
+            min-height: 10px;
+        }
+        ins.adsbygoogle {
+            min-width: 300px;
+            min-height: 50px;
+        }
+    </style>
+	
+	    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132771790-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'UA-132771790-1');
+    </script>
+	
+</head>
+
+<body>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.3&appId=2341538476058014&autoLogAppEvents=1"></script>
+
+<div class="preloader">
+    <div class="lds-ripple">
+        <div class="lds-pos"></div>
+        <div class="lds-pos"></div>
+    </div>
+</div>
+<div id="main-wrapper" data-navbarbg="skin1" data-theme="light" data-layout="vertical" data-sidebartype="full"
+     data-sidebar-position="fixed" data-header-position="fixed"
+     data-boxed-layout="full">
+    <header class="topbar" data-navbarbg="skin1">
+        <nav class="navbar top-navbar navbar-expand-md navbar-light">
+            <div class="navbar-header" data-logobg="skin6">
+                <a class="nav-toggler waves-effect waves-light d-block d-md-none" href="javascript:void(0)">
+                    <i class="ti-menu ti-close"></i>
+                </a>
+                <div class="navbar-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-text">
+                                
+                                <img src="../img/logo-text.png" alt="homepage"
+                                     class="dark-logo"/>
+                           
+                                <img src="../img/logo-light-text.png" class="light-logo"
+                                     alt="homepage"/>
+                            </span>
+                    </a>
+                </div>
+                <a class="topbartoggler d-block d-md-none waves-effect waves-light" href="javascript:void(0)"
+                   data-toggle="collapse" data-target="#navbarSupportedContent"
+                   aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="ti-more"></i>
+                </a>
+            </div>
+            <div class="navbar-collapse collapse" id="navbarSupportedContent" data-navbarbg="skin6">
+                <ul class="navbar-nav float-left mr-auto">
+                    <li class="nav-item search-box">
+                        <a class="nav-link waves-effect waves-dark" href="javascript:void(0)" style="min-width: 200px;">
+                            <div class="d-flex align-items-center">
+                                <i class="mdi mdi-magnify font-20 mr-1"></i>
+                                <div class="ml-1 d-none d-sm-block">
+                                    <span>Search</span>
+                                </div>
+                            </div>
+                        </a>
+                        <form class="app-search position-absolute" action="https://getdp.co/app/banners">
+                            <input type="text" class="form-control" placeholder="Search &amp; enter" name="q">
+                            <a class="srh-btn">
+                                <i class="ti-close"></i>
+                            </a>
+                        </form>
+                    </li>
+                </ul>
+                <ul class="navbar-nav float-right">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle waves-effect waves-dark pro-pic" href=""
+                           data-toggle="dropdown">
+                            <img src="../img/user.png" alt="user"
+                                 class="rounded-circle"
+                                 width="40">
+                            <span class="m-l-5 font-medium d-none d-sm-inline-block">David Orizu                                <i class="mdi mdi-chevron-down"></i></span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right user-dd animated flipInY">
+                            <div class="profile-dis scrollable">
+                                <br>
+                                <a class="dropdown-item" href="https://getdp.co/profile">
+                                    <i class="mdi mdi-account-box-outline m-r-5 m-l-5"></i> My Profile</a>
+                                <a class="dropdown-item" href="https://getdp.co/logout">
+                                    <i class="mdi mdi-logout-variant m-r-5 m-l-5"></i>
+                                    Logout
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <aside class="left-sidebar" data-sidebarbg="skin6">
+        <div class="scroll-sidebar">
+            <nav class="sidebar-nav">
+                <br>
+                <ul id="sidebarnav">
+                    <li class="sidebar-item">
+                        <a class="sidebar-link waves-effect waves-dark active"
+                           href="../index.html">
+                            <i class="mdi mdi-view-dashboard"></i>
+                            <span class="hide-menu">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-link has-arrow waves-effect waves-dark "
+                           href="../banners/all-banners.html">
+                            <i class="mdi mdi-cards-variant"></i>
+                            <span class="hide-menu">Banners</span>
+                        </a>
+                        <ul class="collapse first-level ">
+                            <li class="sidebar-item">
+                                <a href="../banners/all-banners.html" class="sidebar-link">
+                                    <i class="mdi mdi-cards-variant"></i>
+                                    <span class="hide-menu">All Banners</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="../banners/create-new.html" class="sidebar-link">
+                                    <i class="mdi mdi-plus-box"></i>
+                                    <span class="hide-menu"> Create New </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-link waves-effect waves-dark "
+                           href="https://getdp.co/profile">
+                            <i class="mdi mdi-account-box-outline"></i>
+                            <span class="hide-menu">Profile</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-link waves-effect waves-dark" target="_blank"
+                           href="https://community.inbranded.co/c/getdp/5">
+                            <i class="mdi mdi-account-multiple-outline"></i>
+                            <span class="hide-menu">Join the community <i class="fa fa-external-link-alt" style="font-size: .8em;text-align: left;"></i></span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-link waves-effect waves-dark" href="https://getdp.co/logout">
+                            <i class="menu-icon mdi mdi-logout-variant"></i>
+                            <span class="hide-menu">Logout</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+    <div class="page-wrapper">
+		  
+            <div class="page-breadcrumb">
+                <div class="row">
+                    <div class="col-5 align-self-center">
+                        <h4 class="page-title">Create DP Banner</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid" style="min-width: 800px;overflow-y: auto;">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card" style="min-width: 750px;">
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li role="presentation">
+                                    <a href="#home" aria-controls="home" role="tab" id="tab_basic" data-toggle="tab"
+                                       class="active">1.
+                                        Basic Information</a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#profile" aria-controls="profile" id="tab_profile" role="tab" data-toggle="tab"
+                                       disabled>2. Set
+                                        Avatar Location</a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#profile" aria-controls="profile" id="tab_name" role="tab"
+                                       data-toggle="tab" disabled>3.
+                                        Set Name Preference </a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#profile" aria-controls="preview" id="tab_preview" role="tab"
+                                       data-toggle="tab" disabled>4.
+                                        Preview &amp; Publish </a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active" id="home">
+                                    <form role="form">
+                                        <input type="hidden" name="cover_photo" id="cover_photo">
+                                        <div class="box-body">
+                                            <div class="form-group">
+                                                <label for="name">Name</label>
+                                                <input type="text" class="form-control" id="name" name="name"/>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="desc">Description</label>
+                                                <textarea rows="3" class="form-control" id="desc" name="desc"
+                                                          data-ckupload-url="https://getdp.co/ajax/ckfinder_upload"></textarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="category">Category</label><br>
+                                                <select id="category" class="select2" name="category"
+                                                        data-placeholder="Select Category" style="display: none !important; width: 100%;">
+                                                    <option value="">Select Category</option>
+                                                                                                    <option value="1">Business</option>
+                                                                                                    <option value="2">Tech</option>
+                                                                                                    <option value="3">Music</option>
+                                                                                                    <option value="4">Social</option>
+                                                                                                    <option value="5">Sports</option>
+                                                                                                    <option value="6">Movement</option>
+                                                                                                    <option value="7">Art & Culture</option>
+                                                                                                    <option value="8">Film</option>
+                                                                                                    <option value="9">Food & Drinks</option>
+                                                                                                    <option value="10">Fashion & Beauty</option>
+                                                                                                    <option value="11">Safety & Health</option>
+                                                                                                    <option value="12">Others</option>
+                                                                                            </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="tags">Tags</label>
+                                                <select id="tags" class="" name="tags" multiple data-placeholder="Select Tags" style="display: none !important;">
+                                                    <option value="">Select Tags</option>
+                                                                                                    <option value="i will be attending">i will be attending</option>
+                                                                                                    <option value="youth">youth</option>
+                                                                                                    <option value="Movement">Movement</option>
+                                                                                                    <option value="Training">Training</option>
+                                                                                                    <option value="Church">Church</option>
+                                                                                                    <option value="Prayers">Prayers</option>
+                                                                                                    <option value="faith">faith</option>
+                                                                                                    <option value="EVENT">EVENT</option>
+                                                                                                    <option value="God">God</option>
+                                                                                                    <option value="Facebook">Facebook</option>
+                                                                                                    <option value="Business">Business</option>
+                                                                                                    <option value="Education">Education</option>
+                                                                                                    <option value="association">association</option>
+                                                                                                    <option value="Skills">Skills</option>
+                                                                                                    <option value="Digital">Digital</option>
+                                                                                                    <option value="women">women</option>
+                                                                                                    <option value="Conference">Conference</option>
+                                                                                                    <option value="#Internationalwomensday2021">#Internationalwomensday2021</option>
+                                                                                                    <option value="i will be participating">i will be participating</option>
+                                                                                                    <option value="nigeria">nigeria</option>
+                                                                                                    <option value="fellowship">fellowship</option>
+                                                                                                    <option value="Evangelism">Evangelism</option>
+                                                                                                    <option value="teenagers">teenagers</option>
+                                                                                                    <option value="Worship">Worship</option>
+                                                                                                    <option value="seminar">seminar</option>
+                                                                                                    <option value="Christ Embassy">Christ Embassy</option>
+                                                                                                    <option value="IWD2021">IWD2021</option>
+                                                                                                    <option value="Nonprofit">Nonprofit</option>
+                                                                                                    <option value="Productivity">Productivity</option>
+                                                                                                    <option value="love">love</option>
+                                                                                                    <option value="Mentoring">Mentoring</option>
+                                                                                                    <option value="rccg">rccg</option>
+                                                                                                    <option value="i WILL BE THERE!!!">i WILL BE THERE!!!</option>
+                                                                                                    <option value="bible">bible</option>
+                                                                                                    <option value="Empowerment">Empowerment</option>
+                                                                                                    <option value="students">students</option>
+                                                                                                    <option value="music">music</option>
+                                                                                                    <option value="praise">praise</option>
+                                                                                                    <option value="christian">christian</option>
+                                                                                                    <option value="Relationship">Relationship</option>
+                                                                                                    <option value="ChooseToChallenge">ChooseToChallenge</option>
+                                                                                                    <option value="agriculture">agriculture</option>
+                                                                                                    <option value="Volunteer">Volunteer</option>
+                                                                                                    <option value="talk">talk</option>
+                                                                                                    <option value="children">children</option>
+                                                                                                    <option value="Branding">Branding</option>
+                                                                                                    <option value="Leadership">Leadership</option>
+                                                                                                    <option value="womensday">womensday</option>
+                                                                                                    <option value="Finance">Finance</option>
+                                                                                                    <option value="money">money</option>
+                                                                                                    <option value="prayer">prayer</option>
+                                                                                                    <option value="Concert">Concert</option>
+                                                                                                    <option value="home">home</option>
+                                                                                                    <option value="IWD">IWD</option>
+                                                                                                    <option value="Online business">Online business</option>
+                                                                                                    <option value="tech">tech</option>
+                                                                                                    <option value="Easter">Easter</option>
+                                                                                                    <option value="Gender Equality">Gender Equality</option>
+                                                                                                    <option value="GodMind">GodMind</option>
+                                                                                                    <option value="I am ready!">I am ready!</option>
+                                                                                                    <option value="Real Estate">Real Estate</option>
+                                                                                                    <option value="NCCF Living Water">NCCF Living Water</option>
+                                                                                                    <option value="I will be chilling in an atmosphere of LOVE">I will be chilling in an atmosphere of LOVE</option>
+                                                                                                    <option value="virtual">virtual</option>
+                                                                                                    <option value="Religion">Religion</option>
+                                                                                                    <option value="Ramadan">Ramadan</option>
+                                                                                                    <option value="social media">social media</option>
+                                                                                                    <option value="YOUTHCONFERENCE">YOUTHCONFERENCE</option>
+                                                                                                    <option value="word">word</option>
+                                                                                                    <option value="HappyBirthday">HappyBirthday</option>
+                                                                                                    <option value="#ibadanbusinesshub">#ibadanbusinesshub</option>
+                                                                                                    <option value="#ibadanbusinesshubIWD21">#ibadanbusinesshubIWD21</option>
+                                                                                                    <option value="#IWD21">#IWD21</option>
+                                                                                                    <option value="importation">importation</option>
+                                                                                                    <option value="Ecommerce">Ecommerce</option>
+                                                                                                    <option value="Join me at">Join me at</option>
+                                                                                                    <option value="#makeJesusTrend">#makeJesusTrend</option>
+                                                                                                    <option value="SKILL UP">SKILL UP</option>
+                                                                                                    <option value="VMC4.0">VMC4.0</option>
+                                                                                                    <option value="Word Sanctuary">Word Sanctuary</option>
+                                                                                                    <option value="Landbanking Investment">Landbanking Investment</option>
+                                                                                                    <option value="RAGP member">RAGP member</option>
+                                                                                                    <option value="RAGP">RAGP</option>
+                                                                                                    <option value="#ibh">#ibh</option>
+                                                                                                    <option value="#ibhIWD21">#ibhIWD21</option>
+                                                                                                    <option value="Tnation">Tnation</option>
+                                                                                                    <option value="TheNewChurch">TheNewChurch</option>
+                                                                                                    <option value="dataanalytics">dataanalytics</option>
+                                                                                                    <option value="datascience">datascience</option>
+                                                                                                    <option value="ISupportBloomingLadies">ISupportBloomingLadies</option>
+                                                                                                    <option value="Firstflight">Firstflight</option>
+                                                                                                    <option value="PORTMEDIA">PORTMEDIA</option>
+                                                                                                    <option value="PRINCEEKEKEMEDIA">PRINCEEKEKEMEDIA</option>
+                                                                                                    <option value="NUELCONCEPTZ">NUELCONCEPTZ</option>
+                                                                                                    <option value="MANONAMISSION">MANONAMISSION</option>
+                                                                                                    <option value="cleanup">cleanup</option>
+                                                                                                    <option value="GirlChild">GirlChild</option>
+                                                                                                    <option value="music Ministration">music Ministration</option>
+                                                                                                    <option value="A church that is Heaven">A church that is Heaven</option>
+                                                                                                    <option value="Thriving">Thriving</option>
+                                                                                                    <option value="TRUWEX">TRUWEX</option>
+                                                                                                    <option value="SKILL UP - FAIR &amp; EXHIBITION">SKILL UP - FAIR &amp; EXHIBITION</option>
+                                                                                                    <option value="Lady">Lady</option>
+                                                                                                    <option value="Public Speaking">Public Speaking</option>
+                                                                                                    <option value="Ebenezer">Ebenezer</option>
+                                                                                                    <option value="TEEN">TEEN</option>
+                                                                                                    <option value="Healing">Healing</option>
+                                                                                                    <option value="#ACCOUNTABILITY2021">#ACCOUNTABILITY2021</option>
+                                                                                                    <option value="#CBC2021">#CBC2021</option>
+                                                                                                    <option value="#rccghdplace">#rccghdplace</option>
+                                                                                                    <option value="writing">writing</option>
+                                                                                                    <option value="soul winning">soul winning</option>
+                                                                                                    <option value="utiva">utiva</option>
+                                                                                                    <option value="Girls">Girls</option>
+                                                                                                    <option value="Homeschooling">Homeschooling</option>
+                                                                                                    <option value="AlternativeEducation">AlternativeEducation</option>
+                                                                                                    <option value="GWANng">GWANng</option>
+                                                                                                    <option value="BloomingLadiesCooperative">BloomingLadiesCooperative</option>
+                                                                                                    <option value="busines training">busines training</option>
+                                                                                                    <option value="Africa">Africa</option>
+                                                                                                    <option value="webinar">webinar</option>
+                                                                                                    <option value="Motherhood">Motherhood</option>
+                                                                                                    <option value="SMW">SMW</option>
+                                                                                                    <option value="Marriage">Marriage</option>
+                                                                                                    <option value="NLFANM EASTER CONFERENCE">NLFANM EASTER CONFERENCE</option>
+                                                                                                    <option value="Land Flipping">Land Flipping</option>
+                                                                                                    <option value="QDSconference">QDSconference</option>
+                                                                                                    <option value="data">data</option>
+                                                                                                    <option value="revival">revival</option>
+                                                                                                    <option value="#TPGCFoundation">#TPGCFoundation</option>
+                                                                                                    <option value="Online evangelism">Online evangelism</option>
+                                                                                                    <option value="#EXCELLENTPJO">#EXCELLENTPJO</option>
+                                                                                                    <option value="#CESENEGAL">#CESENEGAL</option>
+                                                                                                    <option value="#PJO2021">#PJO2021</option>
+                                                                                                    <option value="#HighlyChristocentric">#HighlyChristocentric</option>
+                                                                                                    <option value="#lvwc">#lvwc</option>
+                                                                                                    <option value="#TheECOPLEDGE">#TheECOPLEDGE</option>
+                                                                                                    <option value="#womeninleadership">#womeninleadership</option>
+                                                                                                    <option value="Human capacity development">Human capacity development</option>
+                                                                                                    <option value="unilorin">unilorin</option>
+                                                                                                    <option value="Agrictech">Agrictech</option>
+                                                                                                    <option value="Araromi_EasterMegaFare">Araromi_EasterMegaFare</option>
+                                                                                                    <option value="dropshipping">dropshipping</option>
+                                                                                                    <option value="mini importation">mini importation</option>
+                                                                                                    <option value="stage drama">stage drama</option>
+                                                                                                    <option value="#WeCAN">#WeCAN</option>
+                                                                                                    <option value="jesus">jesus</option>
+                                                                                                    <option value="#TOGETHERWEWILLOVERCOME">#TOGETHERWEWILLOVERCOME</option>
+                                                                                                    <option value="Revive">Revive</option>
+                                                                                                    <option value="creativity">creativity</option>
+                                                                                                    <option value="#SocialMediaWeek">#SocialMediaWeek</option>
+                                                                                                    <option value="fire">fire</option>
+                                                                                                    <option value="#NiMSAWorldOralDay21">#NiMSAWorldOralDay21</option>
+                                                                                                    <option value="#NADSWorldOralDay21">#NADSWorldOralDay21</option>
+                                                                                                    <option value="#MouthPROUD">#MouthPROUD</option>
+                                                                                                    <option value="#ColgateSmileNG">#ColgateSmileNG</option>
+                                                                                                    <option value="career">career</option>
+                                                                                                    <option value="Northeast Peace and Security Summit">Northeast Peace and Security Summit</option>
+                                                                                                    <option value="The Transformed Nation">The Transformed Nation</option>
+                                                                                                    <option value="HEALTH">HEALTH</option>
+                                                                                                    <option value="#1000ManMarch">#1000ManMarch</option>
+                                                                                                    <option value="#ForEARTH">#ForEARTH</option>
+                                                                                                    <option value="WomenInPolitics">WomenInPolitics</option>
+                                                                                                    <option value="I'll be there">I'll be there</option>
+                                                                                                    <option value="prophetic prayers">prophetic prayers</option>
+                                                                                                    <option value="#RCCGYouthGPW">#RCCGYouthGPW</option>
+                                                                                                    <option value="dinner">dinner</option>
+                                                                                                    <option value="CRYPTOCURRENCY">CRYPTOCURRENCY</option>
+                                                                                                    <option value="SINGSPIRATION">SINGSPIRATION</option>
+                                                                                                    <option value="I will be out on a Limb">I will be out on a Limb</option>
+                                                                                                    <option value="Unstoppable Praise">Unstoppable Praise</option>
+                                                                                                    <option value="NAOSSUNILORIN">NAOSSUNILORIN</option>
+                                                                                                    <option value="charity">charity</option>
+                                                                                                    <option value="I stand against female genital mutilation">I stand against female genital mutilation</option>
+                                                                                                    <option value="NETWORKING">NETWORKING</option>
+                                                                                                    <option value="Zee Obi">Zee Obi</option>
+                                                                                                    <option value="drama">drama</option>
+                                                                                                    <option value="ministry">ministry</option>
+                                                                                                    <option value="Anniversary">Anniversary</option>
+                                                                                                    <option value="yali kano">yali kano</option>
+                                                                                                    <option value="Retreat">Retreat</option>
+                                                                                                    <option value="Refresh">Refresh</option>
+                                                                                                    <option value="birthday">birthday</option>
+                                                                                                    <option value="ccsmw">ccsmw</option>
+                                                                                                    <option value="christchurch">christchurch</option>
+                                                                                                    <option value="Bloomlancer">Bloomlancer</option>
+                                                                                                    <option value="#GPI">#GPI</option>
+                                                                                                    <option value="Profound Impact">Profound Impact</option>
+                                                                                                    <option value="Graphic Design">Graphic Design</option>
+                                                                                                    <option value="P&amp;PConf21">P&amp;PConf21</option>
+                                                                                                    <option value="RISE">RISE</option>
+                                                                                                    <option value="NYAYA">NYAYA</option>
+                                                                                                    <option value="human rights">human rights</option>
+                                                                                                    <option value="Break forth">Break forth</option>
+                                                                                                    <option value="Identity">Identity</option>
+                                                                                                    <option value="equality">equality</option>
+                                                                                                    <option value="Overcome">Overcome</option>
+                                                                                                    <option value="i wil be selling at jolie's food fair">i wil be selling at jolie's food fair</option>
+                                                                                                    <option value="Talents Hunt">Talents Hunt</option>
+                                                                                                    <option value="Relationship Matters">Relationship Matters</option>
+                                                                                                    <option value="Drama &amp; Show">Drama &amp; Show</option>
+                                                                                                    <option value="Heart 2 Heart">Heart 2 Heart</option>
+                                                                                                    <option value="Couples Special">Couples Special</option>
+                                                                                                    <option value="nlc2021">nlc2021</option>
+                                                                                                    <option value="iammadeforthetop">iammadeforthetop</option>
+                                                                                                    <option value="Gospel">Gospel</option>
+                                                                                                    <option value="covid-19 vaccine">covid-19 vaccine</option>
+                                                                                                    <option value="intimacy">intimacy</option>
+                                                                                                    <option value="FLIN">FLIN</option>
+                                                                                                    <option value="Sales">Sales</option>
+                                                                                                    <option value="#yalinetworkkano">#yalinetworkkano</option>
+                                                                                                    <option value="#yalikano">#yalikano</option>
+                                                                                                    <option value="Lifeclass">Lifeclass</option>
+                                                                                                    <option value="#TEAIWD21">#TEAIWD21</option>
+                                                                                                    <option value="#TEAIWD2021">#TEAIWD2021</option>
+                                                                                                    <option value="Human Resources">Human Resources</option>
+                                                                                                    <option value="government">government</option>
+                                                                                                    <option value="fun">fun</option>
+                                                                                                    <option value="MARKETING">MARKETING</option>
+                                                                                                    <option value="Aquagreen">Aquagreen</option>
+                                                                                                    <option value="NDYEP">NDYEP</option>
+                                                                                                    <option value="Ramadan2021">Ramadan2021</option>
+                                                                                                    <option value="Ramadanpic">Ramadanpic</option>
+                                                                                                    <option value="dataanalysis">dataanalysis</option>
+                                                                                                    <option value="bootcamp">bootcamp</option>
+                                                                                                    <option value="i will be connecting">i will be connecting</option>
+                                                                                                    <option value="grace">grace</option>
+                                                                                                    <option value="SDGs">SDGs</option>
+                                                                                                    <option value="will be attending">will be attending</option>
+                                                                                                    <option value="Chat">Chat</option>
+                                                                                                    <option value="creative">creative</option>
+                                                                                                    <option value="hangout">hangout</option>
+                                                                                                    <option value="Organisation">Organisation</option>
+                                                                                                    <option value="MakingOfChampions">MakingOfChampions</option>
+                                                                                                    <option value="CitadelOfChampionsForChrist">CitadelOfChampionsForChrist</option>
+                                                                                                    <option value="affirmation">affirmation</option>
+                                                                                                    <option value="momlife">momlife</option>
+                                                                                                    <option value="relaxation">relaxation</option>
+                                                                                                    <option value="Canva">Canva</option>
+                                                                                                    <option value="renew">renew</option>
+                                                                                                    <option value="rediscover">rediscover</option>
+                                                                                                    <option value="selfcare">selfcare</option>
+                                                                                                    <option value="fitness">fitness</option>
+                                                                                                    <option value="community">community</option>
+                                                                                                    <option value="BLC">BLC</option>
+                                                                                                    <option value="Talent">Talent</option>
+                                                                                                    <option value="Award">Award</option>
+                                                                                                    <option value="#rescuemisson">#rescuemisson</option>
+                                                                                                    <option value="campaign">campaign</option>
+                                                                                                    <option value="GD+">GD+</option>
+                                                                                                    <option value="Nurturing">Nurturing</option>
+                                                                                                    <option value="#CFRIC">#CFRIC</option>
+                                                                                                    <option value="changemaker">changemaker</option>
+                                                                                                    <option value="Dominion City">Dominion City</option>
+                                                                                                    <option value="Dominion City Lagos">Dominion City Lagos</option>
+                                                                                                    <option value="Ibadan">Ibadan</option>
+                                                                                                    <option value="meeting">meeting</option>
+                                                                                                    <option value="Personal Development">Personal Development</option>
+                                                                                                    <option value="#YouthAlive">#YouthAlive</option>
+                                                                                                    <option value="meditation">meditation</option>
+                                                                                                    <option value="happy anniversary">happy anniversary</option>
+                                                                                                    <option value="BLOCKCHAIN">BLOCKCHAIN</option>
+                                                                                                    <option value="parent">parent</option>
+                                                                                                    <option value="habit">habit</option>
+                                                                                                    <option value="#JAM2021">#JAM2021</option>
+                                                                                                    <option value="symposium">symposium</option>
+                                                                                                    <option value="#ICANandIWILL">#ICANandIWILL</option>
+                                                                                                    <option value="#LetsBeatCancer">#LetsBeatCancer</option>
+                                                                                                    <option value="#proudBookner">#proudBookner</option>
+                                                                                                    <option value="#Bookney">#Bookney</option>
+                                                                                                    <option value="rhapathon">rhapathon</option>
+                                                                                                    <option value="make money online">make money online</option>
+                                                                                                    <option value="SMWCC">SMWCC</option>
+                                                                                                    <option value="#NaossYlc2021">#NaossYlc2021</option>
+                                                                                                    <option value="lagos">lagos</option>
+                                                                                                    <option value="#nimelssaauo">#nimelssaauo</option>
+                                                                                                    <option value="#JoinAPC">#JoinAPC</option>
+                                                                                                    <option value="dance">dance</option>
+                                                                                                    <option value="Raadankareem">Raadankareem</option>
+                                                                                                    <option value="single">single</option>
+                                                                                                    <option value="engaged">engaged</option>
+                                                                                                    <option value="Rev'dDavies@67">Rev'dDavies@67</option>
+                                                                                                    <option value="cause">cause</option>
+                                                                                                    <option value="europe">europe</option>
+                                                                                                    <option value="germany">germany</option>
+                                                                                                    <option value="academic excellence">academic excellence</option>
+                                                                                                    <option value="family">family</option>
+                                                                                                    <option value="social">social</option>
+                                                                                                    <option value="worldchanger">worldchanger</option>
+                                                                                                    <option value="theworldchangersconference">theworldchangersconference</option>
+                                                                                                    <option value="iamaworldchanger">iamaworldchanger</option>
+                                                                                                    <option value="#WEC2021">#WEC2021</option>
+                                                                                                    <option value="Fountain of Life">Fountain of Life</option>
+                                                                                                    <option value="Oluwadamilola">Oluwadamilola</option>
+                                                                                                    <option value="#Cooperative">#Cooperative</option>
+                                                                                                    <option value="Hip Replacement Surgery">Hip Replacement Surgery</option>
+                                                                                                    <option value="Damilola Dada">Damilola Dada</option>
+                                                                                                    <option value="livingwitnes">livingwitnes</option>
+                                                                                                    <option value="game">game</option>
+                                                                                                    <option value="#We_Wey_Come_From_Ile-Oluji_Challenge">#We_Wey_Come_From_Ile-Oluji_Challenge</option>
+                                                                                                    <option value="#OndoBeachParty">#OndoBeachParty</option>
+                                                                                                    <option value="GGC2021">GGC2021</option>
+                                                                                                    <option value="competition">competition</option>
+                                                                                                    <option value="CPN">CPN</option>
+                                                                                                    <option value="IDW2021">IDW2021</option>
+                                                                                                    <option value="Silent Drum">Silent Drum</option>
+                                                                                                    <option value="#NiMSAWorldOralDAY21 #NADSWorldOralDay21 #MouthProud">#NiMSAWorldOralDAY21 #NADSWorldOralDay21 #MouthProud</option>
+                                                                                                    <option value="Grace Diyaolu">Grace Diyaolu</option>
+                                                                                                    <option value="Public speaking tips">Public speaking tips</option>
+                                                                                                    <option value="scholarship">scholarship</option>
+                                                                                                    <option value="Ebenezer Diyaolu">Ebenezer Diyaolu</option>
+                                                                                                    <option value="Solve Education!">Solve Education!</option>
+                                                                                                    <option value="#kajola2theworld">#kajola2theworld</option>
+                                                                                                    <option value="PFA 499">PFA 499</option>
+                                                                                                    <option value="literature">literature</option>
+                                                                                                    <option value="tedx">tedx</option>
+                                                                                                    <option value="ted">ted</option>
+                                                                                                    <option value="MSI">MSI</option>
+                                                                                                    <option value="LBC21">LBC21</option>
+                                                                                                    <option value="MSImedia">MSImedia</option>
+                                                                                                    <option value="TheBridgeChurchNg">TheBridgeChurchNg</option>
+                                                                                                    <option value="MorningStar">MorningStar</option>
+                                                                                                    <option value="Okunoye Ayodeji John">Okunoye Ayodeji John</option>
+                                                                                                    <option value="champions">champions</option>
+                                                                                                    <option value="citraks">citraks</option>
+                                                                                                    <option value="IYC2021">IYC2021</option>
+                                                                                                    <option value="Public Awareness">Public Awareness</option>
+                                                                                                    <option value="rhapsodyofrealities">rhapsodyofrealities</option>
+                                                                                                    <option value="Outreach">Outreach</option>
+                                                                                                    <option value="#temp21 #emp9.0 #areagyouthorg">#temp21 #emp9.0 #areagyouthorg</option>
+                                                                                                    <option value="cmapain">cmapain</option>
+                                                                                                    <option value="C2w">C2w</option>
+                                                                                                    <option value="#ISupportAlakoro">#ISupportAlakoro</option>
+                                                                                                    <option value="#IStandWithAlakoro">#IStandWithAlakoro</option>
+                                                                                                    <option value="DC Citizens">DC Citizens</option>
+                                                                                                    <option value="#WehNangong">#WehNangong</option>
+                                                                                                    <option value="Prayer Challenge">Prayer Challenge</option>
+                                                                                                    <option value="IAMBECOMING">IAMBECOMING</option>
+                                                                                                    <option value="TBSummit">TBSummit</option>
+                                                                                                    <option value="audacity">audacity</option>
+                                                                                                    <option value="Shepacademy">Shepacademy</option>
+                                                                                                    <option value="camp">camp</option>
+                                                                                                    <option value="yex">yex</option>
+                                                                                                    <option value="yexcamp">yexcamp</option>
+                                                                                                    <option value="NLFANM">NLFANM</option>
+                                                                                                    <option value="NLYM">NLYM</option>
+                                                                                                    <option value="arewa">arewa</option>
+                                                                                                    <option value="Book Review">Book Review</option>
+                                                                                                    <option value="i will be attending Halalshabach 4.0...">i will be attending Halalshabach 4.0...</option>
+                                                                                                    <option value="Adesayo Adelowo">Adesayo Adelowo</option>
+                                                                                                    <option value="health talks">health talks</option>
+                                                                                                    <option value="parenting">parenting</option>
+                                                                                                    <option value="#selfleadership">#selfleadership</option>
+                                                                                                    <option value="#NoGloveNoLove">#NoGloveNoLove</option>
+                                                                                                    <option value="#MindShiftConference">#MindShiftConference</option>
+                                                                                                    <option value="#2021MindShiftConference">#2021MindShiftConference</option>
+                                                                                                    <option value="#TheLeadingMinds">#TheLeadingMinds</option>
+                                                                                                    <option value="#BloodDrive">#BloodDrive</option>
+                                                                                                    <option value="START">START</option>
+                                                                                                    <option value="#MindShiftConferenceIbadan">#MindShiftConferenceIbadan</option>
+                                                                                                    <option value="VIGIL">VIGIL</option>
+                                                                                                    <option value="#GodBlessOurWomen">#GodBlessOurWomen</option>
+                                                                                                    <option value="#YOBAFEST2021">#YOBAFEST2021</option>
+                                                                                                    <option value="talkshow">talkshow</option>
+                                                                                                    <option value="romance">romance</option>
+                                                                                                    <option value="#MEGAYAYAFAMILY">#MEGAYAYAFAMILY</option>
+                                                                                                    <option value="dram">dram</option>
+                                                                                                    <option value="movie">movie</option>
+                                                                                                    <option value="buiding a solid academic background for the upcoming generation.">buiding a solid academic background for the upcoming generation.</option>
+                                                                                                    <option value="BOUNDLESSPAY">BOUNDLESSPAY</option>
+                                                                                                    <option value="#BetterWithSambé">#BetterWithSambé</option>
+                                                                                                    <option value="#ContentAutoGenerator">#ContentAutoGenerator</option>
+                                                                                                    <option value="EMTA">EMTA</option>
+                                                                                                    <option value="P3Hack">P3Hack</option>
+                                                                                                    <option value="BBN">BBN</option>
+                                                                                                    <option value="Jumia">Jumia</option>
+                                                                                                    <option value="i wil be there">i wil be there</option>
+                                                                                                    <option value="BBNABC">BBNABC</option>
+                                                                                                    <option value="Aliexpress">Aliexpress</option>
+                                                                                                    <option value="Amazon">Amazon</option>
+                                                                                                    <option value="contest">contest</option>
+                                                                                                    <option value="Millionairemom">Millionairemom</option>
+                                                                                                    <option value="pitch">pitch</option>
+                                                                                                    <option value="#GTA">#GTA</option>
+                                                                                                    <option value="pocn">pocn</option>
+                                                                                                    <option value="jhp">jhp</option>
+                                                                                                    <option value="#skillvestconference">#skillvestconference</option>
+                                                                                                    <option value="#DRAMANIGHT">#DRAMANIGHT</option>
+                                                                                                    <option value="#monetizeyourskill">#monetizeyourskill</option>
+                                                                                                    <option value="#Feed 1000 Campaign">#Feed 1000 Campaign</option>
+                                                                                                    <option value="#WeCANandWeWILL">#WeCANandWeWILL</option>
+                                                                                                    <option value="media">media</option>
+                                                                                                    <option value="class">class</option>
+                                                                                                    <option value="#ijeawele">#ijeawele</option>
+                                                                                                    <option value="free">free</option>
+                                                                                                    <option value="#TIAF">#TIAF</option>
+                                                                                                    <option value="entertainment">entertainment</option>
+                                                                                                    <option value="Rev'dDavies">Rev'dDavies</option>
+                                                                                                    <option value="JIgawa">JIgawa</option>
+                                                                                                    <option value="state">state</option>
+                                                                                                    <option value="workshop">workshop</option>
+                                                                                                    <option value="STINGY">STINGY</option>
+                                                                                                    <option value="behind the scences">behind the scences</option>
+                                                                                                    <option value="profit">profit</option>
+                                                                                                    <option value="Associationof">Associationof</option>
+                                                                                                    <option value="farm">farm</option>
+                                                                                                    <option value="SKILLAP">SKILLAP</option>
+                                                                                                    <option value="Crypto">Crypto</option>
+                                                                                                    <option value="PET">PET</option>
+                                                                                                    <option value="PETAFRICA">PETAFRICA</option>
+                                                                                                    <option value="GWE">GWE</option>
+                                                                                                    <option value="muslim">muslim</option>
+                                                                                                    <option value="Wsp">Wsp</option>
+                                                                                                    <option value="song">song</option>
+                                                                                                    <option value="MSSN">MSSN</option>
+                                                                                                    <option value="TobaBest]">TobaBest]</option>
+                                                                                                    <option value="School">School</option>
+                                                                                                    <option value="anglican">anglican</option>
+                                                                                                    <option value="YLC2021">YLC2021</option>
+                                                                                                    <option value="Workshops">Workshops</option>
+                                                                                                    <option value="rcnibadan">rcnibadan</option>
+                                                                                                    <option value="ngo">ngo</option>
+                                                                                                    <option value="donation">donation</option>
+                                                                                                    <option value="#worldrotaractweek">#worldrotaractweek</option>
+                                                                                                    <option value="I'm a proud member">I'm a proud member</option>
+                                                                                                    <option value="foundation">foundation</option>
+                                                                                                    <option value="rhf">rhf</option>
+                                                                                                    <option value="I just donated to reduce the avoidable deaths from Non-Communicable diseases in low income countries in Nigeria">I just donated to reduce the avoidable deaths from Non-Communicable diseases in low income countries in Nigeria</option>
+                                                                                                    <option value="I just donated to reduce avoidable deaths from Non-communicable diseases in low income communities in Nigeria.">I just donated to reduce avoidable deaths from Non-communicable diseases in low income communities in Nigeria.</option>
+                                                                                                    <option value="#theexceptionalalaga">#theexceptionalalaga</option>
+                                                                                                    <option value="MLM">MLM</option>
+                                                                                                    <option value="CCC">CCC</option>
+                                                                                                    <option value="REFER AND EARN">REFER AND EARN</option>
+                                                                                                    <option value="ODAP">ODAP</option>
+                                                                                                    <option value="Ibilola Olowookere">Ibilola Olowookere</option>
+                                                                                                    <option value="#AIMFfestival2021">#AIMFfestival2021</option>
+                                                                                                    <option value="Actors">Actors</option>
+                                                                                                    <option value="Filmmakers">Filmmakers</option>
+                                                                                                    <option value="Toronto">Toronto</option>
+                                                                                                    <option value="IBDFF">IBDFF</option>
+                                                                                                    <option value="Cultural Diversity">Cultural Diversity</option>
+                                                                                                    <option value="discuss">discuss</option>
+                                                                                                    <option value="#SheforLove">#SheforLove</option>
+                                                                                                    <option value="mentalhealth">mentalhealth</option>
+                                                                                                    <option value="trauma">trauma</option>
+                                                                                                    <option value="I volunteer">I volunteer</option>
+                                                                                                    <option value="therapy">therapy</option>
+                                                                                                    <option value="anxiety">anxiety</option>
+                                                                                                    <option value="depression">depression</option>
+                                                                                                    <option value="yoruba">yoruba</option>
+                                                                                                    <option value="investment">investment</option>
+                                                                                                    <option value="poetry">poetry</option>
+                                                                                                    <option value="Aquagreenintegrated">Aquagreenintegrated</option>
+                                                                                                    <option value="utivahackathon">utivahackathon</option>
+                                                                                                    <option value="utivadata">utivadata</option>
+                                                                                                    <option value="#SaveOyoStateStudents">#SaveOyoStateStudents</option>
+                                                                                                    <option value="arepo">arepo</option>
+                                                                                                    <option value="#ihavesponsored">#ihavesponsored</option>
+                                                                                                    <option value="I AM">I AM</option>
+                                                                                                    <option value="Estate">Estate</option>
+                                                                                                    <option value="#WeMove">#WeMove</option>
+                                                                                                    <option value="YPG Lagos">YPG Lagos</option>
+                                                                                                    <option value="futureofwork">futureofwork</option>
+                                                                                                    <option value="#ThePowerOfMany">#ThePowerOfMany</option>
+                                                                                                    <option value="#Jesusparty2021">#Jesusparty2021</option>
+                                                                                                    <option value="glory">glory</option>
+                                                                                                    <option value="#Ignite #RCCG #Freedomcourt #Abeokuta #OgunState">#Ignite #RCCG #Freedomcourt #Abeokuta #OgunState</option>
+                                                                                                    <option value="#iamgivingeveryday">#iamgivingeveryday</option>
+                                                                                                    <option value="#50dayschallenge">#50dayschallenge</option>
+                                                                                                    <option value="#canada">#canada</option>
+                                                                                                    <option value="bigdata">bigdata</option>
+                                                                                                    <option value="I will Boost">I will Boost</option>
+                                                                                                    <option value="I have Boosted">I have Boosted</option>
+                                                                                                    <option value="LGN">LGN</option>
+                                                                                                    <option value="Mothers">Mothers</option>
+                                                                                                    <option value="staff">staff</option>
+                                                                                                    <option value="Clarity">Clarity</option>
+                                                                                                    <option value="PROGRAMME">PROGRAMME</option>
+                                                                                                    <option value="Thanks for your support">Thanks for your support</option>
+                                                                                                    <option value="SAVIOUR">SAVIOUR</option>
+                                                                                                    <option value="WLD2021">WLD2021</option>
+                                                                                                    <option value="#Boost">#Boost</option>
+                                                                                                    <option value="police">police</option>
+                                                                                                    <option value="pension">pension</option>
+                                                                                                    <option value="housing">housing</option>
+                                                                                                    <option value="I am a Member of Royal Princess">I am a Member of Royal Princess</option>
+                                                                                                    <option value="Another Pentecost">Another Pentecost</option>
+                                                                                                    <option value="#HopConf">#HopConf</option>
+                                                                                                    <option value="will be attending sisters retreat '21">will be attending sisters retreat '21</option>
+                                                                                                    <option value="for i choose to be ignited for Jesus">for i choose to be ignited for Jesus</option>
+                                                                                                    <option value="Silent Drums.">Silent Drums.</option>
+                                                                                                    <option value="Ambassador">Ambassador</option>
+                                                                                                    <option value="CanvaWithEase">CanvaWithEase</option>
+                                                                                                    <option value="heaven">heaven</option>
+                                                                                                    <option value="#BellefuValentineChallenge">#BellefuValentineChallenge</option>
+                                                                                                    <option value="IWD 2021">IWD 2021</option>
+                                                                                                    <option value="AWF">AWF</option>
+                                                                                                    <option value="ARAMANDA">ARAMANDA</option>
+                                                                                                    <option value="#selflove">#selflove</option>
+                                                                                                    <option value="#positivechange">#positivechange</option>
+                                                                                                    <option value="profession">profession</option>
+                                                                                                    <option value="NIWIIT">NIWIIT</option>
+                                                                                                    <option value="IAmAPartner">IAmAPartner</option>
+                                                                                                    <option value="ceigbpartnershipsunday">ceigbpartnershipsunday</option>
+                                                                                                    <option value="GNVOY">GNVOY</option>
+                                                                                                    <option value="#trado">#trado</option>
+                                                                                                    <option value="ror">ror</option>
+                                                                                                    <option value="UN75">UN75</option>
+                                                                                                    <option value="SDg">SDg</option>
+                                                                                                    <option value="YMK MULTIMEDIA">YMK MULTIMEDIA</option>
+                                                                                                    <option value="environment">environment</option>
+                                                                                                    <option value="summit">summit</option>
+                                                                                                    <option value="iamASponsor">iamASponsor</option>
+                                                                                                    <option value="christEmbassy">christEmbassy</option>
+                                                                                                    <option value="RHYC">RHYC</option>
+                                                                                                    <option value="FLOGA">FLOGA</option>
+                                                                                                    <option value="Publci Speaking Tips">Publci Speaking Tips</option>
+                                                                                                    <option value="Presbyterian">Presbyterian</option>
+                                                                                                    <option value="onlinetv">onlinetv</option>
+                                                                                                    <option value="AYCC">AYCC</option>
+                                                                                                    <option value="PCC TV">PCC TV</option>
+                                                                                                    <option value="Christ Embassy Asari Eso">Christ Embassy Asari Eso</option>
+                                                                                                    <option value="author">author</option>
+                                                                                                    <option value="rccgyp6">rccgyp6</option>
+                                                                                                    <option value="#I_Say_No_To_Break_In_Academic_Calendar">#I_Say_No_To_Break_In_Academic_Calendar</option>
+                                                                                                    <option value="IKORODU">IKORODU</option>
+                                                                                                    <option value="prophetic">prophetic</option>
+                                                                                                    <option value="cinemas">cinemas</option>
+                                                                                                    <option value="nollywood">nollywood</option>
+                                                                                                    <option value="#EXPERIENCE2021">#EXPERIENCE2021</option>
+                                                                                                    <option value="natural">natural</option>
+                                                                                                    <option value="hair">hair</option>
+                                                                                                    <option value="Natoday">Natoday</option>
+                                                                                                    <option value="CELESTIAL">CELESTIAL</option>
+                                                                                                    <option value="WONDER">WONDER</option>
+                                                                                                    <option value="JCCFWEEK">JCCFWEEK</option>
+                                                                                                    <option value="iQualify">iQualify</option>
+                                                                                                    <option value="MIRACLE">MIRACLE</option>
+                                                                                                    <option value="Elevate">Elevate</option>
+                                                                                                    <option value="study">study</option>
+                                                                                                    <option value="Dominionrehoboth">Dominionrehoboth</option>
+                                                                                                    <option value="spirit">spirit</option>
+                                                                                                    <option value="cinema">cinema</option>
+                                                                                                    <option value="My Live Call Experience">My Live Call Experience</option>
+                                                                                                    <option value="valentine">valentine</option>
+                                                                                                    <option value="TTF">TTF</option>
+                                                                                                    <option value="Digital marketing">Digital marketing</option>
+                                                                                                    <option value="TRADE">TRADE</option>
+                                                                                                    <option value="skill">skill</option>
+                                                                                                    <option value="upskill">upskill</option>
+                                                                                                    <option value="InternationalWomensDay">InternationalWomensDay</option>
+                                                                                                    <option value="student">student</option>
+                                                                                                    <option value="iamthen3w">iamthen3w</option>
+                                                                                                    <option value="#oracle69digtal">#oracle69digtal</option>
+                                                                                                    <option value="gfmc">gfmc</option>
+                                                                                                    <option value="#websiteAuditing">#websiteAuditing</option>
+                                                                                                    <option value="#SEOWritng">#SEOWritng</option>
+                                                                                                    <option value="#Copywriing">#Copywriing</option>
+                                                                                                    <option value="HON. A A MANI MEDIA TEAM MOVEMENT  Wishes to Invite You to its First Mani Stake Holders Meeting">HON. A A MANI MEDIA TEAM MOVEMENT  Wishes to Invite You to its First Mani Stake Holders Meeting</option>
+                                                                                                    <option value="Organized by Media Team For Dokajin Katsina">Organized by Media Team For Dokajin Katsina</option>
+                                                                                                    <option value="Zannan Mani">Zannan Mani</option>
+                                                                                                    <option value="#WorldWaterDay">#WorldWaterDay</option>
+                                                                                                    <option value="Hon. Aminu Ashiru Mani.  Which Will Insha Allah Schedule To Hold As Follows:  Date: Saturday 01">Hon. Aminu Ashiru Mani.  Which Will Insha Allah Schedule To Hold As Follows:  Date: Saturday 01</option>
+                                                                                                    <option value="GROWTH">GROWTH</option>
+                                                                                                    <option value="#HaskeWorldWaterDay">#HaskeWorldWaterDay</option>
+                                                                                                    <option value="April 2021  Time: 10:00am  Venue: Hon. A A Mani Campaign Office">April 2021  Time: 10:00am  Venue: Hon. A A Mani Campaign Office</option>
+                                                                                                    <option value="Borno Yoth Rising Association">Borno Yoth Rising Association</option>
+                                                                                                    <option value="crusade">crusade</option>
+                                                                                                    <option value="Church Worker">Church Worker</option>
+                                                                                                    <option value="bpay">bpay</option>
+                                                                                                    <option value="Couple">Couple</option>
+                                                                                                    <option value="bitdefi">bitdefi</option>
+                                                                                                    <option value="bfi">bfi</option>
+                                                                                                    <option value="Dew of Hermon">Dew of Hermon</option>
+                                                                                                    <option value="SOUND">SOUND</option>
+                                                                                                    <option value="THIRST">THIRST</option>
+                                                                                                    <option value="BAUCHISCHOLARSHIP">BAUCHISCHOLARSHIP</option>
+                                                                                                    <option value="ggcafrica2021">ggcafrica2021</option>
+                                                                                                    <option value="CNGSCHOLARSHIP">CNGSCHOLARSHIP</option>
+                                                                                                    <option value="BAUCHISTATE">BAUCHISTATE</option>
+                                                                                                    <option value="ASUU">ASUU</option>
+                                                                                                    <option value="football">football</option>
+                                                                                                    <option value="Bitcoin">Bitcoin</option>
+                                                                                                    <option value="Roni">Roni</option>
+                                                                                                    <option value="local">local</option>
+                                                                                                    <option value="currencies">currencies</option>
+                                                                                                    <option value="mpr">mpr</option>
+                                                                                                    <option value="RoyaltySpreadLove">RoyaltySpreadLove</option>
+                                                                                                    <option value="token">token</option>
+                                                                                                    <option value="AbaToTheWorld4">AbaToTheWorld4</option>
+                                                                                                    <option value="Phonics">Phonics</option>
+                                                                                                    <option value="#IEIWD21">#IEIWD21</option>
+                                                                                                    <option value="Speech">Speech</option>
+                                                                                                    <option value="Approved">Approved</option>
+                                                                                                    <option value="#Sahmrouzelfoundation volunteer">#Sahmrouzelfoundation volunteer</option>
+                                                                                                    <option value="PayPal">PayPal</option>
+                                                                                                    <option value="games">games</option>
+                                                                                                    <option value="Celstial Church of Christ">Celstial Church of Christ</option>
+                                                                                                    <option value="WWW.COM">WWW.COM</option>
+                                                                                                    <option value="Deliverance">Deliverance</option>
+                                                                                                    <option value="WHYWEWORSHIPCHRISTOURMESSIAH">WHYWEWORSHIPCHRISTOURMESSIAH</option>
+                                                                                                    <option value="vote">vote</option>
+                                                                                                    <option value="RCFFUNAAB">RCFFUNAAB</option>
+                                                                                                    <option value="FreshersWeek">FreshersWeek</option>
+                                                                                                    <option value="market">market</option>
+                                                                                                    <option value="confe">confe</option>
+                                                                                                    <option value="online store">online store</option>
+                                                                                                    <option value="store">store</option>
+                                                                                                    <option value="sell">sell</option>
+                                                                                                    <option value="buy">buy</option>
+                                                                                                    <option value="ProjectInspire2021">ProjectInspire2021</option>
+                                                                                                    <option value="PI4.0">PI4.0</option>
+                                                                                                    <option value="#TeamGSDI">#TeamGSDI</option>
+                                                                                                    <option value="FLOGAInspires">FLOGAInspires</option>
+                                                                                                    <option value="IsupportPI4.0">IsupportPI4.0</option>
+                                                                                                    <option value="Together We Stick to Victory">Together We Stick to Victory</option>
+                                                                                                    <option value="#His Assurance">#His Assurance</option>
+                                                                                                    <option value="foursquare">foursquare</option>
+                                                                                                    <option value="wordconference2.0">wordconference2.0</option>
+                                                                                                    <option value="TP2021CONFIRMED">TP2021CONFIRMED</option>
+                                                                                                    <option value="foursquare gospel church">foursquare gospel church</option>
+                                                                                                    <option value="yali">yali</option>
+                                                                                                    <option value="Foursquare railway compound">Foursquare railway compound</option>
+                                                                                                    <option value="kano state">kano state</option>
+                                                                                                    <option value="yali hub">yali hub</option>
+                                                                                                    <option value="light">light</option>
+                                                                                                    <option value="change">change</option>
+                                                                                                    <option value="hope">hope</option>
+                                                                                                    <option value="impact">impact</option>
+                                                                                                    <option value="#SMLP2021">#SMLP2021</option>
+                                                                                                    <option value="#WoWA">#WoWA</option>
+                                                                                                    <option value="womenempowerment">womenempowerment</option>
+                                                                                                    <option value="businesshub">businesshub</option>
+                                                                                                    <option value="work">work</option>
+                                                                                                    <option value="innovation">innovation</option>
+                                                                                            </select>
+                                            </div>
+                                            <div class="row" style="display: block;">
+                                                <label class="col-4" style="min-width: 200px;">
+                                                    Visibility </label>
+                                                <div class="col-12">
+                                                    <div class="radio">
+                                                        <label class="no_bold ticket_charge_trigger">
+                                                            <input type="radio" name="visibility" value="public"
+                                                                   checked="checked"> &nbsp; Public - Accessible via the
+                                                            homepage, banner listings and direct link
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="radio">
+                                                        <label class="no_bold ticket_charge_trigger">
+                                                            <input type="radio" name="visibility" value="private">&nbsp; Private
+                                                            - Only accessible via direct link
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <br>
+        
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="exampleInputFile">Banner Image</label><br>
+                                                <div id="cover_preview"
+                                                     class="box-header with-border box-image center-crop"
+                                                     style="display: inline-block;background-image: url('../img/placeholder.png');max-width: 750px;margin-bottom: 15px;">
+                                                    <img src="../img/placeholder.png">
+                                                </div>
+                                                <div class="n_listed" style="margin-top: -10px">
+                                                    <div class="progress progress-xxs hidden" id="cover_progress"
+                                                         style="max-width: 750px;margin: -15px 0 0px">
+                                                        <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                                             role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                                                             aria-valuemax="100" style="width: 50%">
+                                                        </div>
+                                                    </div>
+                                                    <div style="color: #333;font-size: .9em;margin: 10px 0 5px"
+                                                         class="progress_msg">
+                                                        Note: Maximum size of the image should be 10MB
+                                                    </div>
+                                                    <a href="javascript:void(0)" id="cover_trigger"><i
+                                                                class="mdi mdi-plus-box-outline"></i>
+                                                        Add cover image </a> &nbsp; &nbsp;
+                                                    &nbsp; &nbsp;
+                                                    <!-- <a href="javascript:void(0)"" id="remove_cover_image" class="hidden"><i
+                                                                class="mdi mdi-close"></i> Remove Image</a> -->
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="hashtag">Twitter Hashtag (Optional)</label>
+                                                <input type="text" class="form-control" id="hashtag" name="hashtag"
+                                                       placeholder="#mybanner"/>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>CTA (Optional)
+                                                    <a href="#" class="simptip-position-right simptip-movable"
+                                                       data-tooltip="Specify a Call to Action link for people once they create their personalized DP">
+                                                        <i class="mdi mdi-alert-circle-outline"></i>
+                                                    </a>
+                                                </label>
+                                                <div class="row">
+                                                    <div class="col-sm-4">
+                                                        <input type="text" class="form-control" id="cta" name="cta"
+                                                               placeholder="Text"/>
+                                                    </div>
+                                                    <div class="col-sm-8">
+                                                        <input type="url" class="form-control" id="cta_link" name="cta_link"
+                                                               placeholder="Link"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+        
+                                        <div class="box-footer">
+                                            <button type="button" class="btn btn-info" id="btn_to_avatar" disabled>Next</button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div role="tabpanel" class="tab-pane avatar" id="profile">
+                                    <div style="padding: 0 10px;">
+                                        <div class="av_controls">
+                                            <div class="row">
+                                                <div class="col-4"
+                                                     style="min-width: 110px !important;max-width: 110px !important;">
+                                                    <label>Avatar Shape: </label>
+                                                </div>
+                                                <div class="col-3"
+                                                     style="min-width: 120px !important;max-width: 120px !important;">
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio" name="avatar_shape" id="avatar_shape_circle"
+                                                                   value="circle" checked="">
+                                                            Circle
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio" name="avatar_shape" id="avatar_shape_square"
+                                                                   value="square">
+                                                            Square
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="nm_controls">
+                                        <div id="name-controls" class="clearfix">
+                                            <div class="iblock">
+                                                <div style="width: 200px">
+                                                    <input class="form-control" placeholder="Dummy Name"
+                                                           id="name-builder-text">
+                                                </div>
+                                            </div>
+                                            <div class="iblock">
+                                                <div style="width: 200px">
+                                                    <select class="form-control select2able" id="name-builder-font">
+                                                        <option>Default</option>
+                                                                                                            <option>
+        Abril Fatface</option>
+                                                                                                            <option>
+        Aclonica</option>
+                                                                                                            <option>
+        Advent Pro</option>
+                                                                                                            <option>
+        Alegreya Sans</option>
+                                                                                                            <option>
+        Archivo</option>
+                                                                                                            <option>
+        Arimo</option>
+                                                                                                            <option>
+        Arsenal</option>
+                                                                                                            <option>
+        Arvo</option>
+                                                                                                            <option>
+        Concert One</option>
+                                                                                                            <option>
+        Dosis</option>
+                                                                                                            <option>
+        El Messiri</option>
+                                                                                                            <option>
+        Electrolize</option>
+                                                                                                            <option>
+        Exo</option>
+                                                                                                            <option>
+        Fira Sans</option>
+                                                                                                            <option>
+        Gravitas One</option>
+                                                                                                            <option>
+        Hind</option>
+                                                                                                            <option>
+        Josefin Sans</option>
+                                                                                                            <option>
+        Karla</option>
+                                                                                                            <option>
+        KoHo</option>
+                                                                                                            <option>
+        Lato</option>
+                                                                                                            <option>
+        Lora</option>
+                                                                                                            <option>
+        Merriweather</option>
+                                                                                                            <option>
+        Montserrat</option>
+                                                                                                            <option>
+        Noto Sans</option>
+                                                                                                            <option>
+        Nunito</option>
+                                                                                                            <option>
+        Old Standard TT</option>
+                                                                                                            <option>
+        Open Sans</option>
+                                                                                                            <option>
+        Oswald</option>
+                                                                                                            <option>
+        Overpass</option>
+                                                                                                            <option>
+        Oxygen</option>
+                                                                                                            <option>
+        PT Mono</option>
+                                                                                                            <option>
+        PT Sans</option>
+                                                                                                            <option>
+        PT Serif</option>
+                                                                                                            <option>
+        Playfair Display</option>
+                                                                                                            <option>
+        Poppins</option>
+                                                                                                            <option>
+        Raleway</option>
+                                                                                                            <option>
+        Rubik</option>
+                                                                                                            <option>
+        Source Sans</option>
+                                                                                                            <option>
+        Source Sans Pro</option>
+                                                                                                            <option>
+        Ubuntu</option>
+                                                                                                            <option>
+        Vollkorn</option>
+                                                                                                            <option>
+        Yatra One</option>
+                                                                                                            <option>Roboto</option>
+                                                                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="iblock">
+                                                <div style="width: 75px">
+                                                    <select class="form-control select2able" id="name-builder-size">
+                                                        <option>14</option>
+                                                        <option>18</option>
+                                                        <option>24</option>
+                                                        <option selected>30</option>
+                                                        <option>36</option>
+                                                        <option>48</option>
+                                                        <option>60</option>
+                                                        <option>72</option>
+                                                        <option>96</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="iblock">
+                                                <div>
+                                                    <button type="button" class="btn btn-light btn-flat active"
+                                                            id="btn-bold">
+                                                        <i class="mdi mdi-format-bold"></i></button>
+                                                    <button type="button" class="btn btn-light btn-flat" id="btn-italic">
+                                                        <i class="mdi mdi-format-italic"></i></button>
+                                                    <button type="button" class="btn btn-light btn-flat" id="btn-underline">
+                                                        <i class="mdi mdi-format-underline"></i></button>
+                                                </div>
+                                            </div>
+                                            <div class="iblock" style="overflow: visible;">
+                                                <div>
+                                                    <button type="button" class="btn btn-light btn-flat" id="btn-color">
+                                                        <i class="mdi mdi-format-color-text"></i></button>
+                                                    <button type="button" class="btn btn-light btn-flat active" id="btn-wrap">
+                                                        <i class="mdi mdi-wrap"></i></button>
+                                                </div>
+                                            </div>
+                                            <div class="iblock">
+                                                <div class="btn-group m-b-20">
+                                                    <button type="button"
+                                                            class="btn btn-light btn-outline btn-flat btn-align active"
+                                                            data-val="left">
+                                                        <i class="mdi mdi-format-horizontal-align-left"></i>
+                                                    </button>
+                                                    <button type="button" class="btn btn-light btn-outline btn-flat btn-align"
+                                                            data-val="center">
+                                                        <i class="mdi mdi-format-horizontal-align-center"></i>
+                                                    </button>
+                                                    <button type="button" class="btn btn-light btn-outline btn-flat btn-align"
+                                                            data-val="right">
+                                                        <i class="mdi mdi-format-horizontal-align-right"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" name="name_visibility" id="hide_name" value="hidden">
+                                                    Hide and Ignore name field
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <style>
+                                        .meta-builder, .meta-builder * {
+                                            touch-action: none;
+                                        }
+                                    </style>
+                                    <div class="meta-builder">
+                                        <img class="i_src" src="../img/placeholder.png"
+                                             style="max-width: 750px;"/>
+                                        <div id="name-builder" class="nm_controls pv_controls name-builder">Dummy Name</div>
+                                    </div>
+                                    <br>
+                                    <div class="box-footer av_controls">
+                                        <button type="button" class="btn btn-info" id="btn_to_start">Previous</button>
+                                        <button type="button" class="btn btn-info" id="btn_to_finish">Next</button>
+                                    </div>
+                                    <div class="box-footer nm_controls">
+                                        <button type="button" class="btn btn-info" id="btn_to_avatar_">Previous</button>
+                                        <button type="button" class="btn btn-info" id="btn_to_preview">Publish Preview
+                                        </button>
+                                    </div>
+                                    <div class="pv_controls m-t-10 m-b-15">
+                                        <div id="msg"></div>
+                                    </div>
+                                    <div class="box-footer pv_controls">
+                                        <button type="button" class="btn btn-info" id="btn_to_name">Previous</button>
+                                        <button type="button" class="btn btn-success" id="btn_to_publish">Publish</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden" style="display: none;">
+                <form id="cover_photo_form" method="post" action="https://getdp.co/ajax/upload?width=1024&q=100">
+                    <input type="file" name="image" accept="image/*" id="cover_photo_input">
+                    <input type="hidden" id="placeholder_link" value="../img/placeholder.png">
+                    <input type="hidden" id="fake_ele_link" value="../img/user.png">
+                    <input type="hidden" id="publish_link" value="../banner/create-new.html">
+                </form>
+            </div>
+        <!--<footer class="footer text-center">-->
+        <!--    Made with <i class="mdi mdi-heart text-danger"></i> by-->
+        <!--    <a href="https://workprofile.co/odufuwa_segun" target="_blank">Segun</a>. All Rights Reserved-->
+        <!--</footer>-->
+
+            
+            <div class="footer-sticky">
+            <style>
+            .footer-sticky{position:fixed;background: #fff; bottom: 0;left: 0; right: 0; height: auto; z-index: 999;max-height: 130px !important;border-top: 1px solid #f1f1f1;display: none;}
+            /*.footer-sticky{padding-bottom: 10px;}*/
+            .footer-sticky .wrap{position:relative;margin: 10px auto !important;}
+            .footer-sticky .mobile{display: none;}
+            .footer-sticky .desktop{display: block;}
+            .footer-sticky 	.sticky-close{position:absolute;top: 0;right: 5px; background: #f1f1f1;border-radius: 50%;border: 1px solid #b3b3b3; padding: 0 !important;}
+            .footer-sticky 	.sticky-close{width: 25px; height: 25px; line-height: 1; vertical-align: middle;cursor:pointer;}
+            @media(max-width: 768px){
+            .footer-sticky .mobile{display: block;}
+            .footer-sticky .desktop{display: none;}
+            }
+            </style>
+           
+        </div>
+        <footer class="footer bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+                        <ul class="list-inline mb-2">
+                            <li class="list-inline-item">
+                                <a href="https://getdp.co/about">About</a>
+                            </li>
+                            <li class="list-inline-item">&sdot;</li>
+                            <li class="list-inline-item">
+                                <a href="http://workprofile.co/odufuwa_segun" target="_blank">Contact</a>
+                            </li>
+                            <li class="list-inline-item">&sdot;</li>
+                            <li class="list-inline-item">
+                                <a href="https://getdp.co/terms">Terms of Use</a>
+                            </li>
+                            <li class="list-inline-item">&sdot;</li>
+                            <li class="list-inline-item">
+                                <a href="https://getdp.co/privacy">Privacy Policy</a>
+                            </li>
+                        </ul>
+                        <p class="text-muted small mb-4 mb-lg-0">
+                            &copy; GetDP 2021. All Rights Reserved. All Rights Reserved
+                        </p>
+                    </div>
+                    <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item mr-3">
+                                <a href="#">
+                                    <i class="fab fa-facebook fa-2x fa-fw"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item mr-3">
+                                <a href="http://twitter.com/getdpdotco">
+                                    <i class="fab fa-twitter-square fa-2x fa-fw"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="http://instagram.com/getdp">
+                                    <i class="fab fa-instagram fa-2x fa-fw"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        </div>
+        </div>
+        
+        <script src="../js/bundle.min.js"></script>
+        <script>
+            var sentry_options = {
+                dsn: 'https://062cd05459b8436cb7163e0319fe43b7@sentry.io/1727059',
+                whitelistUrls: ['https://getdp.co/',],
+            };
+            // Sentry.init(sentry_options);
+        </script>
+        
+    <script src="../js/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    
+    <script src="../js/sparkline.js"></script>
+    <script src="../js/waves.js"></script>
+    <script src="../js/sidebarmenu.js"></script>
+    <script src="../js/custom.min.js"></script>
+    <script>
+        // $(document).ready(function () {
+        //     (adsbygoogle = window.adsbygoogle || []).push({});
+        // });
+        $(function () {
+            var footer_sticky = $('.footer-sticky');
+            if (footer_sticky.length > 0) {
+                footer_sticky.find('.sticky-close').click(function () {
+                    footer_sticky.addClass('hidden');
+                });
+                $(document).scroll(function () {
+                    var is_mob = false;
+                    var scroll_top = $(this).scrollTop();
+    
+                    if ($(window).width() < 960) {
+                        is_mob = true;
+                    }
+                    var scroll_height = is_mob ? 120 : 300;
+    
+                    if (scroll_top > scroll_height + 50) {
+                        footer_sticky.show();
+                    } else {
+                        footer_sticky.hide();
+                    }
+                });
+            }
+        });
+    </script>
+        <script src="../js/ckeditor.js"></script>
+        <script src="../js/jquery.selectareas.js"></script>
+        <script src="../js/select2.min.js"></script>
+        <script src="../js/pickr.min.js"></script>
+        <script src="../js/jquery.form.min.js"></script>
+        <script src="../js/formuploader.js"></script>
+<script>$(function () {
+
+let cover_progress = $('#cover_progress');
+let cover_trigger = $('#cover_trigger');
+let cover_photo_input = $('#cover_photo_input');
+let cover_photo = $('#cover_photo');
+let cover_preview = $('#cover_preview');
+let cover_photo_form = $('#cover_photo_form');
+let cover_message = $('.progress_msg');
+let remove_image = $('#remove_cover_image');
+let placeholder_link = $('#placeholder_link').val();
+let fake_ele_link = $('#fake_ele_link').val();
+let profile_ele = $('#profile');
+let btn_publish = $('#btn_to_publish');
+
+cover_photo_form.formUploader(
+    function () {
+        cover_trigger.html('<i class="fa fa-spin fa-circle-o-notch"></i> Uploading').attr('disabled', 'disabled');
+        cover_photo_input.attr('disabled', 'disabled');
+        cover_progress.find('.progress-bar').css('width', 0);
+        cover_progress.removeClass('hidden');
+        cover_message.html('');
+        return true;
+    },
+    function (position, total, percent) {
+        cover_progress.find('.progress-bar').css('width', percent + '%');
+    },
+    function (response) {
+        cover_photo_input.removeAttr('disabled');
+        cover_progress.addClass('hidden');
+        if (response.status === 'undefined') {
+            cover_message.html('Upload failed!!! Unknown error occurred.').addClass('text-danger');
+            cover_trigger.html('<i class="mdi mdi-swap-horizontal"></i> Retry').removeAttr('disabled');
+            return;
+        }
+        if (response.status !== 'success') {
+            cover_message.html(response.error).addClass('text-danger');
+            cover_trigger.html('<i class="mdi mdi-swap-horizontal"></i> Retry').removeAttr('disabled');
+            return;
+        }
+        let permalink = response.permalink;
+        cover_trigger.html('<i class="mdi mdi-swap-horizontal"></i> Change Image').removeAttr('disabled');
+        cover_preview.css('background-image', 'url(' + permalink + ')').find('img').attr('src', permalink);
+        cover_photo.val(permalink);
+        remove_image.removeClass('hidden');
+        initImageLoadHandler(permalink);
+    }, function (error) {
+        cover_message.html('Upload failed!!! Unable to connect to server.').addClass('text-danger');
+        cover_trigger.html('<i class="mdi mdi-swap-horizontal"></i> Retry').removeAttr('disabled');
+        cover_progress.addClass('hidden');
+        cover_photo_input.removeAttr('disabled');
+    }
+);
+cover_trigger.click(function () {
+    cover_photo_input.click();
+});
+cover_photo_input.change(function () {
+    cover_photo_form.submit();
+});
+remove_image.click(function () {
+    cover_trigger.html('<i class="mdi mdi-plus-box-outline"></i> Add cover image &nbsp; &nbsp;').removeAttr('disabled');
+    remove_image.addClass('hidden');
+    cover_photo.val('');
+
+    let permalink = placeholder_link;
+    cover_preview.css('background-image', 'url(' + permalink + ')').find('img').attr('src', permalink);
+});
+
+$('.nav-tabs').on('click', 'a[disabled]', function (e) {
+    e.preventDefault();
+    return false;
+});
+$('#btn_to_avatar,#btn_to_avatar_').click(function () {
+    $('.nav-tabs li a').removeClass('active');
+    $($('.nav-tabs li')[1]).find('a').removeAttr('disabled').click();
+});
+$('#btn_to_start').click(function () {
+    $($('.nav-tabs li')[0]).find('a').click();
+});
+$('#btn_to_finish,#btn_to_name').click(function () {
+    $($('.nav-tabs li')[2]).find('a').removeAttr('disabled').click();
+});
+$('#btn_to_preview').click(function () {
+    $($('.nav-tabs li')[3]).find('a').removeAttr('disabled').click();
+});
+btn_publish.click(function () {
+    publishBanner();
+});
+
+$('#tab_profile').click(function (e) {
+    let me = $(this);
+    if (me.attr('disabled') !== undefined) {
+        return;
+    }
+    scrollToTop();
+    profile_ele.removeClass('name preview');
+    profile_ele.addClass('avatar');
+    builder_img.selectAreas({
+        allowSelect: false,
+        aspectRatio: 1,
+        allowDelete: false,
+        minSize: [10, 10],
+        onChanged: debugQtyAreas,
+        width: builder_img[0].width,
+    });
+    setTimeout(create_avatar_frame, 100);
+});
+$('#tab_name').click(function () {
+    let me = $(this);
+    if (me.attr('disabled') !== undefined) {
+        return;
+    }
+    profile_ele.removeClass('avatar preview');
+    profile_ele.addClass('name');
+});
+$('#tab_preview').click(function () {
+    let me = $(this);
+    if (me.attr('disabled') !== undefined) {
+        return;
+    }
+    profile_ele.removeClass('avatar name');
+    profile_ele.addClass('preview');
+});
+
+let meta_builder = $('.meta-builder');
+let name_builder = $('#name-builder');
+let builder_img = $('.meta-builder img');
+let is_square = false;
+let avatar_dimen = {width: 150, height: 150};
+let avatar_axis = {top: 50, left: 50};
+
+function prep_frame(img_src) {
+    builder_img.attr('src', img_src);
+    builder_img.selectAreas('destroy');
+    $('#fake_avatar').remove();
+
+    if (builder_img[0].complete) {
+        refreshTabLock();
+    } else {
+        builder_img.one('load', function () {
+            refreshTabLock();
+        }).on('error', function () {
+            builder_img.attr('src', builder_img.attr('src'));
+        });
+    }
+}
+
+function create_avatar_frame() {
+    let len = builder_img.selectAreas('areas').length;
+    if (len > 0) {
+        // builder_img.selectAreas('remove', 0);
+        return;
+    }
+    let fake_ele_ml = '<img id="fake_avatar" src="' + fake_ele_link + '"/>';
+    builder_img.parent().append(fake_ele_ml);
+    let areaOptions = {
+        x: 50,
+        y: 50,
+        width: 150,
+        height: 150,
+    };
+    builder_img.selectAreas('add', areaOptions);
+}
+
+function debugQtyAreas(event, id, areas) {
+    if (is_square) {
+        $('.select-areas-background-area, .select-areas-outline, #fake_avatar').css('border-radius', 0);
+    } else {
+        $('.select-areas-background-area, .select-areas-outline, #fake_avatar').css('border-radius', '50%');
+    }
+    if (areas === undefined || areas[0] === undefined) {
+        return;
+    }
+    console.log(areas[0]);
+    $('#fake_avatar').css({
+        top: areas[0].y + 'px',
+        left: areas[0].x + 'px',
+        width: areas[0].width + 'px',
+        height: areas[0].height + 'px'
+    });
+    avatar_dimen = {width: areas[0].width, height: areas[0].height};
+    avatar_axis = {top: areas[0].y, left: areas[0].x};
+    // console.log(areas.length + " areas", arguments);
+}
+
+$('#avatar_shape_circle').click(function () {
+    $('.select-areas-background-area, .select-areas-outline, #fake_avatar').css('border-radius', '50%');
+    is_square = false;
+});
+$('#avatar_shape_square').click(function () {
+    $('.select-areas-background-area, .select-areas-outline, #fake_avatar').css('border-radius', 0);
+    is_square = true;
+});
+
+let name_builder_size_control = $('#name-builder-size');
+let name_builder_bold_control = $('#btn-bold');
+let name_builder_italic_control = $('#btn-italic');
+let name_builder_underline_control = $('#btn-underline');
+let name_builder_color_control = $('#btn-color');
+let name_builder_font_control = $('#name-builder-font');
+let name_builder_wrap = $('#btn-wrap');
+let name_builder_align = $('.btn-align');
+let name_builder_is_bold = false;
+let name_builder_is_italized = false;
+let name_builder_is_underlined = false;
+let name_builder_color_code = '#000000';
+let name_builder_font = 'Arial';
+let name_builder_font_size = 24;
+let parent_width = 750;
+let name_builder_axis = {top: 50, left: 50, align: 'left', width: parent_width - 50, wrap: true};
+
+let image_loaded = false;
+
+let ck_finder_upload_url = $('#desc').attr('data-ckupload-url');
+let desc_editor;
+ClassicEditor.create(document.querySelector('#desc'), {
+    ckfinder: {
+        uploadUrl: ck_finder_upload_url
+    },
+    toolbar: {
+        items: ['heading', '|', 'bold', 'italic', 'underline', 'alignment', 'link', 'bulletedList', 'numberedList', 'blockQuote', 'undo', 'redo']
+    },
+}).then(editor => {
+    console.log('Editor Initialized successfully');
+    desc_editor = editor;
+    editor.model.document.on('change:data', (evt, data) => {
+        let textData = editor.getData();
+        $('#desc').val(textData);
+    });
+}).catch(error => {
+    console.error(error);
+});
+
+name_builder.css('width', 750 - 50 + 'px');
+
+$('.select2able, .select2').select2();
+name_builder_size_control.select2({
+    tags: true
+});
+$('#tags').select2({
+    tags: true,
+    tokenSeparators: [',']
+});
+name_builder_size_control.change(function () {
+    let val = Number.parseInt(name_builder_size_control.children("option:selected").val());
+    if (isNaN(val)) {
+        val = 18;
+    }
+    name_builder_font_size = val;
+    name_builder.css({'font-size': val + 'px'})
+});
+let text_change_handler = function () {
+    let val = $(this).val().trim();
+    if (val === '') {
+        val = $(this).attr('placeholder');
+    }
+    name_builder.html(val);
+};
+$('#name-builder-text').keyup(text_change_handler);
+name_builder_bold_control.click(function () {
+    if (name_builder_is_bold) {
+        name_builder.css({'font-weight': 'normal'});
+        name_builder_bold_control.removeClass('active');
+        name_builder_is_bold = false;
+        return;
+    }
+    name_builder.css({'font-weight': 'bold'});
+    name_builder_bold_control.addClass('active');
+    name_builder_is_bold = true;
+});
+name_builder_italic_control.click(function () {
+    if (name_builder_is_italized) {
+        name_builder.css({'font-style': 'normal'});
+        name_builder_italic_control.removeClass('active');
+        name_builder_is_italized = false;
+        return;
+    }
+    name_builder.css({'font-style': 'italic'});
+    name_builder_italic_control.addClass('active');
+    name_builder_is_italized = true;
+});
+name_builder_underline_control.click(function () {
+    if (name_builder_is_underlined) {
+        name_builder.css({'text-decoration': 'none'});
+        name_builder_underline_control.removeClass('active');
+        name_builder_is_underlined = false;
+        return;
+    }
+    name_builder.css({'text-decoration': 'underline'});
+    name_builder_underline_control.addClass('active');
+    name_builder_is_underlined = true;
+});
+
+let fk_ele = undefined;
+
+$('#hide_name').change(function () {
+    let me = $(this);
+    let checked = me[0].checked;
+    if (checked) {
+        name_builder.addClass('hidden');
+    } else {
+        name_builder.removeClass('hidden');
+    }
+});
+
+let pickr = new Pickr({
+    el: '#btn-color',
+    useAsButton: true,
+    default: name_builder_color_code,
+    defaultRepresentation: 'HEX',
+    position: 'left',
+    appendToBody: true,
+    components: {
+        preview: true,
+        opacity: true,
+        hue: true,
+        interaction: {
+            hex: true,
+            rgba: true,
+            hsla: false,
+            hsva: false,
+            cmyk: false,
+            input: true,
+            clear: false,
+            save: false
+        }
+    },
+    onChange(hsva, instance) {
+        hsva;     // HSVa color object, if cleared null
+        let xar = hsva.toHEX();
+        console.log();
+        let color = '#' + xar[0] + '' + xar[1] + '' + xar[2];
+        name_builder.css('color', color);
+        name_builder_color_code = color;
+    }
+});
+
+name_builder_align.click(function () {
+    let me = $(this);
+    let val = me.data('val');
+
+    $('.btn-align').removeClass('active');
+    me.addClass('active');
+
+    let parent = parent_width;
+    let width = name_builder.outerWidth();
+    let left = name_builder[0].offsetLeft;
+
+    name_builder.removeClass('left right center');
+
+    if (val === 'left') {
+        left = fk_ele[0].offsetLeft;
+        let new_width = parent_width - left;
+
+        name_builder.addClass('left');
+        name_builder_axis.align = 'left';
+        name_builder_axis.left = left;
+        name_builder_axis.width = new_width;
+        name_builder.css({left: left + "px", width: new_width + 'px'});
+
+        $('#fk_name_builder').remove();
+        fk_ele = undefined;
+    } else if (val === 'center') {
+        if (name_builder_axis.align === 'left') {
+            fk_ele = name_builder.clone();
+            fk_ele.attr('id', 'fk_name_builder');
+            fk_ele.css({width: 'auto', visibility: 'hidden'});
+
+            name_builder.parent().append(fk_ele);
+        }
+        let fk_width = fk_ele.outerWidth();
+        let fk_left = fk_ele[0].offsetLeft;
+
+        let fk_center = fk_left + (fk_width / 2);
+        let to_left = fk_center;
+        let to_right = parent_width - fk_center;
+
+        if (to_left < 50) {
+            to_left = 50;
+        }
+        if (to_right < 50) {
+            to_right = 50;
+        }
+
+        if (to_left < to_right) {
+            left = 0;
+            width = to_left * 2;
+        } else {
+            width = to_right * 2;
+            left = to_left - to_right;
+        }
+
+        name_builder.addClass('center');
+        name_builder_axis.align = 'center';
+        name_builder_axis.left = left;
+        name_builder_axis.width = width;
+        name_builder.css({left: left + "px", width: width + 'px'});
+
+    } else if (val === 'right') {
+        if (name_builder_axis.align === 'left') {
+            // create a fake element with width auto, and visibility hidden
+            // determine the width,
+            // new width = left + width
+            // text-align becomes right
+
+            fk_ele = name_builder.clone();
+            fk_ele.attr('id', 'fk_name_builder');
+            fk_ele.css({width: 'auto', visibility: 'hidden'});
+        } else {
+            left = fk_ele[0].offsetLeft;
+        }
+
+        name_builder.parent().append(fk_ele);
+        let fk_width = fk_ele.outerWidth();
+        let new_width = fk_width + left;
+
+        name_builder.addClass('right');
+        name_builder_axis.align = 'right';
+        name_builder_axis.left = 0;
+        name_builder_axis.width = new_width;
+        name_builder.css({width: new_width + 'px'});
+    }
+});
+name_builder_wrap.click(function () {
+    if (name_builder_axis.wrap) {
+        name_builder_axis.wrap = false;
+        $('.name-builder').addClass('nowrap');
+        name_builder_wrap.removeClass('active');
+    } else {
+        name_builder_axis.wrap = true;
+        $('.name-builder').removeClass('nowrap');
+        name_builder_wrap.addClass('active');
+    }
+});
+
+// name_builder_color_control.colorpicker();
+// name_builder_color_control.on('changeColor', function (event) {
+//     let color = event.color.toString();
+//     name_builder.css('color', color);
+//     name_builder_color_code = color;
+// });
+
+
+name_builder_font_control.change(function () {
+    let new_font = name_builder_font_control.children("option:selected").val();
+    let font_id = 'specimen_' + new_font.replace(/ /gi, '_');
+
+    if (new_font === 'Default') {
+        name_builder.css('font-family', 'unset');
+        name_builder_font = '';
+        return;
+    }
+
+    if ($('#' + font_id).length === 0) {
+        let g_link = 'https://fonts.googleapis.com/css?family=' + encodeURI(new_font) + ':400,700';
+        let font_ml = '<link href="' + g_link + '" rel="stylesheet" id="' + font_id + '">';
+        $('head').append(font_ml);
+    }
+    name_builder.css('font-family', '"' + new_font + '", sans-serif');
+    name_builder_font = new_font;
+});
+
+let banner_name = $('#name');
+let category = $('#category');
+let tags = $('#tags');
+banner_name.keyup(function () {
+    refreshTabLock();
+});
+
+function onImageLoaded(permalink) {
+    image_loaded = true;
+    cover_progress.addClass('hidden');
+    prep_frame(permalink);
+    refreshTabLock();
+}
+
+function initImageLoadHandler(permalink) {
+    cover_progress.removeClass('hidden');
+
+    cover_preview.css('background-image', 'url(' + permalink + ')');
+    let img = cover_preview.find('img');
+
+    img.attr('src', permalink);
+
+    if (img[0].complete) {
+        onImageLoaded(permalink);
+    } else {
+        img.one('load', function () {
+            onImageLoaded(permalink);
+        }).on('error', function () {
+            img.attr('src', img.attr('src'));
+        });
+    }
+}
+
+function scrollToTop() {
+    $('html,body').animate({scrollTop: 50}, 0);
+}
+
+function refreshTabLock() {
+    if (banner_name.val().trim() === ''
+        || category.val().trim() === ''
+        || cover_photo.val().trim() === ''
+        || cover_photo.val() === placeholder_link
+        || !image_loaded
+    ) {
+        //lock tabs
+        $('.nav-tabs li').slice(1).find('a').attr('disabled', 'disabled');
+        $('#btn_to_avatar').attr('disabled', 'disabled');
+        return;
+    }
+    $($('.nav-tabs li')[2]).find('a').attr('disabled', 'disabled');
+    $('#btn_to_avatar').removeAttr('disabled');
+
+}
+
+let dragging = false;
+let iX, iY;
+let handler = function (e) {
+    cancelEvent(e);
+    let parent = $('.meta-builder').closest('.tab-pane');
+    if (!parent.has('.name')) {
+        return;
+    }
+    // if (e.which !== undefined && e.which !== 1) {
+    //     console.log('Which: ' + e.which);
+    //     return;
+    // }
+    let mousePos = getMousePosition(e);
+    dragging = true;
+    iX = mousePos.x - this.offsetLeft;
+    iY = mousePos.y - this.offsetTop;
+    if (name_builder_axis.align === 'right' || name_builder_axis.align === 'center') {
+        iX = mousePos.x - fk_ele[0].offsetLeft;
+    }
+    // this.setCapture && this.setCapture();
+    initializeRepositioning();
+    return false;
+};
+name_builder.on('mousedown', handler).bind('touchstart', handler);
+
+let error_msg = $('#msg');
+
+let moveHandler = function (e) {
+    if (dragging) {
+        cancelEvent(e);
+        // let parent = $('.meta-builder').offset();
+        e = e || window.event;
+        let mousePos = getMousePosition(e);
+        let oX = mousePos.x - iX;
+        let oY = mousePos.y - iY;
+
+        name_builder_axis.left = oX;
+        name_builder_axis.top = oY;
+
+        let width = name_builder.outerWidth();
+
+        if (oY < 0) {
+            oY = 0;
+        }
+        if (oX < 0) {
+            oX = 0;
+        }
+        if (name_builder_axis.align === 'left') {
+            width = parent_width - oX;
+            if (width < 50) {
+                width = 50
+            }
+            name_builder_axis.width = width;
+            name_builder.css({
+                left: oX + "px",
+                top: oY + "px",
+                width: width + "px"
+            });
+        } else if (name_builder_axis.align === 'center') {
+            let fk_width = fk_ele.outerWidth();
+            let fk_center = oX + (fk_width / 2);
+            let to_left = fk_center;
+            let to_right = parent_width - fk_center;
+            let left = 0;
+
+            if (to_left < 50) {
+                to_left = 50;
+            }
+            if (to_right < 50) {
+                to_right = 50;
+            }
+
+            if (to_left < to_right) {
+                left = 0;
+                width = to_left * 2;
+            } else {
+                width = to_right * 2;
+                left = to_left - to_right;
+            }
+            name_builder_axis.left = left;
+            name_builder_axis.width = width;
+
+            name_builder.css({
+                left: left + "px",
+                top: oY + "px",
+                width: width + 'px'
+            });
+            fk_ele.css('left', oX + 'px');
+        } else if (name_builder_axis.align === 'right') {
+            let width = fk_ele.outerWidth() + oX;
+            if (width > parent_width) {
+                width = parent_width;
+            }
+            if (width < 50) {
+                width = 50;
+            }
+            name_builder_axis.left = 0;
+            name_builder_axis.width = width;
+            name_builder.css({
+                top: oY + "px",
+                width: width + "px"
+            });
+            fk_ele.css('left', oX + 'px');
+
+        }
+        // return false;
+    }
+};
+let upHandler = function (e) {
+    cancelEvent(e);
+    let textele = name_builder[0];
+    // dragging = false;
+    // textele.setCapture && textele.releaseCapture();
+    // e.cancelBubble = true;
+    finalizeRepositioning();
+};
+
+function initializeRepositioning() {
+    $(document).on('mousemove', moveHandler).on('touchmove', moveHandler);
+    $(document).on('mouseup', upHandler).on('touchend', upHandler);
+}
+
+function finalizeRepositioning() {
+    $(document).off('mousemove', moveHandler).off('touchmove', moveHandler);
+    $(document).off('mouseup', upHandler).off('touchend', upHandler);
+}
+
+function publishBanner() {
+    let data = {
+        name: banner_name.val(),
+        banner_image: cover_photo.val(),
+        avatar_shape: is_square ? 'square' : 'circle',
+        avatar_dimension: avatar_dimen,
+        avatar_axis: avatar_axis,
+        name_font: name_builder_font,
+        name_color_code: name_builder_color_code,
+        name_is_underlined: name_builder_is_underlined,
+        name_is_italized: name_builder_is_italized,
+        name_is_bold: name_builder_is_bold,
+        name_font_size: name_builder_font_size,
+        name_axis: name_builder_axis,
+        category: category.val(),
+        tags: tags.val(),
+        cta: $('#cta').val(),
+        cta_link: $('#cta_link').val(),
+        visibility: $('[name="visibility"]:checked').val(),
+        name_visibility: $('[name="name_visibility"]')[0].checked ? 'hidden' : 'visible',
+        hashtag: $('#hashtag').val(),
+        desc: $('#desc').val()
+    };
+    let url = $('#publish_link').val();
+    btn_publish.attr('disabled', 'disabled').html('<i class="fa fa-spinner fa-spin"></i>');
+    console.log(data);
+    $.post(url, data, 'json').done(function (d) {
+        if (d.status === undefined) {
+            btn_publish.html("Publish").removeAttr('disabled');
+            error_msg.html('Unknown error occurred, pls try again later').attr('class', 'text-danger').fadeIn(300);
+            return;
+        }
+        if (d.status !== 'success') {
+            btn_publish.html("Publish").removeAttr('disabled');
+            error_msg.html(d.message).attr('class', 'text-danger').fadeIn(300);
+            return;
+        }
+        window.location.href = d.next;
+    }).fail(function (error) {
+        btn_publish.html("Publish").removeAttr('disabled');
+        error_msg.html('Unable to connect, Check your internet connection and try again').attr('class', 'text-danger').fadeIn(300);
+    });
+}
+
+function cancelEvent(e) {
+    let event = e || window.event || {};
+    event.cancelBubble = true;
+    event.returnValue = false;
+    event.stopPropagation && event.stopPropagation(); // jshint ignore: line
+    event.preventDefault && event.preventDefault(); // jshint ignore: line
+}
+
+function getMousePosition(event) {
+    if (!event.pageX) {
+        if (event.originalEvent) {
+            event = event.originalEvent;
+        }
+        if (event.changedTouches) {
+            event = event.changedTouches[0];
+        }
+
+        if (event.touches) {
+            event = event.touches[0];
+        }
+    }
+    let x = event.pageX,
+        y = event.pageY;
+
+    return {x: x, y: y};
+}
+
+// $('#btn_to_name').click();
+
+});</script></body>
+    </html>        
