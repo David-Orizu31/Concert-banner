@@ -15844,3 +15844,8 @@ File: scss
 		display: block !important;
 	}
 }
+
+.fa.icons {
+	margin-right: 10px;
+}
+

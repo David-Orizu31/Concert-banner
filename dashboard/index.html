@@ -27,8 +27,9 @@
 	
 	            <link rel="stylesheet" href="css/chartist.min.css">
 			    <!-- Custom CSS -->
-    <link href="https://getdp.co/font.css?font=Overpass" rel="stylesheet">
+    <link href="css/font.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -139,7 +140,7 @@
         <nav class="navbar top-navbar navbar-expand-md navbar-light">
             <div class="navbar-header" data-logobg="skin6">
                 <a class="nav-toggler waves-effect waves-light d-block d-md-none" href="javascript:void(0)">
-                    <i class="ti-menu ti-close"></i>
+                    <i class="fa fa-bars fa-close"></i>
                 </a>
                 <div class="navbar-brand">
                     <a href="https://getdp.co/" class="logo">
@@ -156,7 +157,7 @@
                 <a class="topbartoggler d-block d-md-none waves-effect waves-light" href="javascript:void(0)"
                    data-toggle="collapse" data-target="#navbarSupportedContent"
                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="ti-more"></i>
+                    <i class="fa fa-ellipsis-h"></i>
                 </a>
             </div>
             <div class="navbar-collapse collapse" id="navbarSupportedContent" data-navbarbg="skin6">
@@ -164,7 +165,7 @@
                     <li class="nav-item search-box">
                         <a class="nav-link waves-effect waves-dark" href="javascript:void(0)" style="min-width: 200px;">
                             <div class="d-flex align-items-center">
-                                <i class="mdi mdi-magnify font-20 mr-1"></i>
+                                <i class="fa fa-search"></i>
                                 <div class="ml-1 d-none d-sm-block">
                                     <span>Search</span>
                                 </div>
@@ -173,7 +174,7 @@
                         <form class="app-search position-absolute" action="https://getdp.co/app/banners">
                             <input type="text" class="form-control" placeholder="Search &amp; enter" name="q">
                             <a class="srh-btn">
-                                <i class="ti-close"></i>
+                                <i class="fa fa-close"></i>
                             </a>
                         </form>
                     </li>
@@ -185,15 +186,15 @@
                             <img src="img/user.png" alt="user"
                                  class="rounded-circle"
                                  width="40">
-                            <span class="m-l-5 font-medium d-none d-sm-inline-block">David Orizu                                <i class="mdi mdi-chevron-down"></i></span>
+                            <span class="m-l-5 font-medium d-none d-sm-inline-block">David Orizu                                <i class="fa fa-angle-down"></i></span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right user-dd animated flipInY">
                             <div class="profile-dis scrollable">
                                 <br>
                                 <a class="dropdown-item" href="https://getdp.co/profile">
-                                    <i class="mdi mdi-account-box-outline m-r-5 m-l-5"></i> My Profile</a>
+                                    <i class="fa fa-user-o icons"></i> My Profile</a>
                                 <a class="dropdown-item" href="https://getdp.co/logout">
-                                    <i class="mdi mdi-logout-variant m-r-5 m-l-5"></i>
+                                    <i class="fa fa-power-off icons"></i>
                                     Logout
                                 </a>
                             </div>
@@ -211,26 +212,26 @@
                     <li class="sidebar-item">
                         <a class="sidebar-link waves-effect waves-dark active"
                            href="index.html">
-                            <i class="mdi mdi-view-dashboard"></i>
+                            <i class="fa fa-dashboard icons"></i>
                             <span class="hide-menu">Dashboard</span>
                         </a>
                     </li>
                     <li class="sidebar-item">
                         <a class="sidebar-link has-arrow waves-effect waves-dark "
                            href="banners/all-banners.html">
-                            <i class="mdi mdi-cards-variant"></i>
+                            <i class="fa fa-picture-o icons"></i>
                             <span class="hide-menu">Banners</span>
                         </a>
                         <ul class="collapse first-level ">
                             <li class="sidebar-item">
                                 <a href="banners/all-banners.html" class="sidebar-link">
-                                    <i class="mdi mdi-cards-variant"></i>
+                                    <i class="fa fa-picture-o icons"></i>
                                     <span class="hide-menu">All Banners</span>
                                 </a>
                             </li>
                             <li class="sidebar-item">
                                 <a href="banners/create-new.html" class="sidebar-link">
-                                    <i class="mdi mdi-plus-box"></i>
+                                    <i class="fa fa-plus-square icons"></i>
                                     <span class="hide-menu"> Create New </span>
                                 </a>
                             </li>
@@ -239,20 +240,20 @@
                     <li class="sidebar-item">
                         <a class="sidebar-link waves-effect waves-dark "
                            href="profile.html">
-                            <i class="mdi mdi-account-box-outline"></i>
+                            <i class="fa fa-user-o icons"></i>
                             <span class="hide-menu">Profile</span>
                         </a>
                     </li>
                     <li class="sidebar-item">
                         <a class="sidebar-link waves-effect waves-dark" target="_blank"
                            href="https://community.inbranded.co/c/getdp/5">
-                            <i class="mdi mdi-account-multiple-outline"></i>
+                            <i class="fa fa-users icons"></i>
                             <span class="hide-menu">Join the community <i class="fa fa-external-link-alt" style="font-size: .8em;text-align: left;"></i></span>
                         </a>
                     </li>
                     <li class="sidebar-item">
                         <a class="sidebar-link waves-effect waves-dark" href="https://getdp.co/logout">
-                            <i class="menu-icon mdi mdi-logout-variant"></i>
+                            <i class="fa fa-power-off icons"></i>
                             <span class="hide-menu">Logout</span>
                         </a>
                     </li>
@@ -318,7 +319,7 @@ window.addEventListener( 'load', function(){
                 <h4 class="page-title">Dashboard
 
                     <a class="btn btn-primary btn-sm" href="https://getdp.co/app/banner/new" role="button">
-                        <i class="mdi mdi-plus-box"></i>
+                        <i class="fa fa-plus-square"></i>
                         New DP Banner
                     </a>
                 </h4>
@@ -333,7 +334,7 @@ window.addEventListener( 'load', function(){
                         <div class="col-md-12">
                             <div class="d-flex no-block align-items-center">
                                 <div>
-                                    <i class="mdi mdi-cards-variant font-20 text-muted"></i>
+                                    <i class="fa fa-picture-o"></i>
                                     <p class="font-16 m-b-5">Total DP Banners</p>
                                 </div>
                                 <div class="ml-auto">
@@ -357,7 +358,7 @@ window.addEventListener( 'load', function(){
                         <div class="col-md-12">
                             <div class="d-flex no-block align-items-center">
                                 <div>
-                                    <i class="mdi mdi-poll font-20  text-muted"></i>
+                                    <i class="fa fa-bar-chart"></i>
                                     <p class="font-16 m-b-5">Total Traffic</p>
                                 </div>
                                 <div class="ml-auto">
@@ -381,7 +382,7 @@ window.addEventListener( 'load', function(){
                         <div class="col-md-12">
                             <div class="d-flex no-block align-items-center">
                                 <div>
-                                    <i class="mdi mdi-account-check font-20 text-muted"></i>
+                                    <i class="fa fa-user"><span class="fa fa-check" style="font-size: 10px; top: -5px;"></span></i>
                                     <p class="font-16 m-b-5">Total Usage</p>
                                 </div>
                                 <div class="ml-auto">
@@ -534,17 +535,17 @@ window.addEventListener( 'load', function(){
                 <ul class="list-inline mb-0">
                     <li class="list-inline-item mr-3">
                         <a href="#">
-                            <i class="fab fa-facebook fa-2x fa-fw"></i>
+                            <i class="fa fa-facebook-square" style="font-size: 25px; margin-right: 10px;"></i>
                         </a>
                     </li>
                     <li class="list-inline-item mr-3">
                         <a href="http://twitter.com/getdpdotco">
-                            <i class="fab fa-twitter-square fa-2x fa-fw"></i>
+                            <i class="fa fa-twitter-square" style="font-size: 25px; margin-right: 10px;"></i>
                         </a>
                     </li>
                     <li class="list-inline-item">
                         <a href="http://instagram.com/getdp">
-                            <i class="fab fa-instagram fa-2x fa-fw"></i>
+                            <i class="fa fa-instagram" style="font-size: 25px; margin-right: 10px;"></i>
                         </a>
                     </li>
                 </ul>
