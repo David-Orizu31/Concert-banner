@@ -1,0 +1,287 @@
+
+
+<!DOCTYPE html>
+<html dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Login now to create DP banners">
+    <meta name="author" content="GetDP">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <title>Sign Up - GetDP</title>
+    <!-- Custom CSS -->
+    <link href="dashboard/css/styles.css" rel="stylesheet">
+    <link href="dashboard/css/larsseiet-style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132771790-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'UA-132771790-1');
+    </script>
+
+</head>
+
+<body>
+<div class="main-wrapper">
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <div class="lds-ripple">
+            <div class="lds-pos"></div>
+            <div class="lds-pos"></div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- Login box.scss -->
+    <!-- ============================================================== -->
+    <style>
+        html, body {
+            font-family: Larsseit, sans-serif;
+        }
+        .auth-wrapper {
+            background: #f6f6fc;flex-direction: column;
+            padding-top: 55px;
+        }
+        .auth-wrapper .logo {
+            margin-top: 10px;
+        }
+        .auth-wrapper .logo img {
+            width: 70%;
+            min-width: 70px;
+            display: block;
+            margin: 0 auto;
+            max-width: 150px;
+            border-radius: 50%;
+            -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1) !important;
+            -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1) !important;
+            box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1) !important;
+        }
+        .auth-wrapper .auth-box {
+            margin: 30px 0 0 !important;
+            max-width: 350px;
+        }
+        .auth-wrapper h3, .auth-wrapper h6 {
+            color: #000;
+        }
+        .auth-wrapper .auth-box.err-box {
+            margin: 15px auto -15px !important;
+            border-top-color: #fa5838;
+        }
+        .auth-wrapper .auth-box.err-box small {
+            color: #333;
+        }
+        .no-margin {
+            margin: 0 !important;
+        }
+    </style>
+    <!--    <div class="auth-wrapper d-flex no-block justify-content-center align-items-center" style="background:url(https://getdp.co/assets/images/big/auth-bg.jpg) no-repeat center center;">-->
+    <div class="auth-wrapper d-flex no-block justify-content-center align-items-center">
+        <a href="https://getdp.co/">
+            <div class="logo">
+                <img src="images/logo-variant-square.png" alt="logo"/>
+            </div>
+        </a>
+				
+        <div class="auth-box">
+            <div>
+                <div class="">
+                    <h3 class="text-center no-margin">
+                        <small>
+							Signup now                        </small>
+                    </h3>
+                </div>
+                <!-- Form -->
+                <div class="row">
+					                        <div class="col-12 m-t-10">
+							                            <button class="btn btn-block btn-facebook" id="fb-login"
+                                    href="https://getdp.co/signin/facebook"><i
+                                        class="mdi mdi-facebook"></i> Signup via Facebook
+                            </button>
+                            <h6 class="text-center m-t-10">
+                                <small>OR</small>
+                            </h6>
+                        </div>
+					                    <div class="col-12">
+                        <form class="form-horizontal" id="signup_form" action="signup.html">
+                            <input type="hidden" name="profile_photo" value="images/user.png">
+                            <input type="hidden" name="provider_data" value="">
+                            <input type="hidden" name="next" value="">
+                            <div class="input-group mb-3 ">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fa fa-user-o"></i></span>
+                                </div>
+                                <input class="form-control" type="text" required=""
+                                       placeholder="Name" id="name" name="name" value="">
+                            </div>
+                            <div class="input-group mb-3 ">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fa fa-envelope-o"></i></span>
+                                </div>
+                                <input class="form-control" type="email" required="" placeholder="Email" id="email"
+                                       name="email" value="">
+                            </div>
+                            <div class="input-group mb-3 ">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fa fa-lock"></i></span>
+                                </div>
+                                <input class="form-control" type="text" required="" placeholder="Username" id="username"
+                                       name="username">
+                            </div>
+                            <div class="input-group mb-3 ">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fa fa-key"></i></span>
+                                </div>
+                                <input class="form-control" type="password" required=""
+                                       placeholder="Password" id="password" name="password">
+                            </div>
+                            <div class="input-group mb-3 ">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fa fa-key"></i></span>
+                                </div>
+                                <input class="form-control" type="password" required=""
+                                       placeholder="Confirm Password" id="rpassword" name="rpassword">
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-md-12 ">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                        <label class="custom-control-label" for="customCheck1">
+                                            <span style="font-size: .9em;">
+                                            I agree to all <a href="terms.html" target="_blank">Terms &amp; Conditions</a>
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-md-12">
+                                    <center>
+                                        <div id="msg" class="text-center"></div>
+                                    </center>
+                                </div>
+                            </div>
+                            <div class="form-group text-center ">
+                                <div class="col-xs-12">
+                                    <button class="btn btn-block btn-app " type="submit">Sign Up</button>
+                                </div>
+                            </div>
+                            <div class="form-group m-b-0 m-t-10 ">
+                                <div class="col-sm-12 text-center ">
+									                                    <span style="font-size: .9em;">
+                                        Already have an account? <a href="login.html"
+                                                                    class="text-info m-l-5 "><b>Sign In</b></a>
+                                    </span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+</div>
+<script src="dashboard/js/jquery.min.js"></script>
+<script src="dashboard/js/popper.min.js"></script>
+<script src="dashboard/js/bootstrap.min.js"></script>
+<script>
+    $('[data-toggle="tooltip "]').tooltip();
+    $(".preloader ").fadeOut();
+</script>
+<script type="text/javascript">
+    $(function () {
+        let signup_form = $('#signup_form');
+        let form_message = signup_form.find('#msg');
+
+        signup_form.submit(function (e) {
+            e.preventDefault();
+            if (!validateForm()) {
+                return;
+            }
+            form_message.hide();
+
+            let me = $(this);
+            let btn = me.find('button');
+            let btn_text = btn.html();
+            btn.attr('disabled', 'disabled').html('<i class="fa fa-spin fa-spinner"></i>');
+
+            $.post(me.attr('action'), me.serialize(), 'json').done(function (d) {
+                if (d.status === undefined) {
+                    btn.html(btn_text).removeAttr('disabled');
+                    form_message.html('Unknown error occurred, pls try again later').attr('class', 'text-danger').fadeIn(300);
+                    return;
+                }
+                if (d.status !== 'success') {
+                    btn.html(btn_text).removeAttr('disabled');
+                    form_message.html(d.message).attr('class', 'text-danger').fadeIn(300);
+                    return;
+                }
+                window.location.href = d.next;
+            }).fail(function () {
+                btn.html(btn_text).removeAttr('disabled');
+                form_message.html('Unable to connect, Check your internet connection and try again').attr('class', 'text-danger').fadeIn(300)
+            });
+        });
+
+        function validateForm() {
+            let name = $('#name').val();
+            let email = $('#email').val();
+            let username = $('#username').val();
+            let password = $('#password').val().trim();
+            let rpassword = $('#rpassword').val().trim();
+            if (name === '' || email === '' || username === '' || password === '' || rpassword === '') {
+                form_message.html('All fields are required.').attr('class', 'text-danger').hide().fadeIn(300);
+                return false;
+            }
+            let email_re = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/i;
+            if (!email_re.test(email)) {
+                form_message.html('Email is invalid, check and try again').attr('class', 'text-danger').hide().fadeIn(300);
+                $('#email').focus();
+                return false;
+            }
+            let username_re = /^[a-z_][a-z0-9_]+$/i;
+            if (!username_re.test(username)) {
+                form_message.html('Username is invalid, valid username can contains only a-z,0-9 and _. It can only begin with either a-z or _').attr('class', 'text-danger').hide().fadeIn(300);
+                $('#username').focus();
+                return false;
+            }
+            if (password.length < 6 || password.length > 16) {
+                form_message.html('Password must be between 6 and 16 characters!').attr('class', 'text-danger').hide().fadeIn(300);
+                $('#password').focus();
+                return false;
+            }
+            if (password !== rpassword) {
+                form_message.html('Passwords do not match!').attr('class', 'text-danger').hide().fadeIn(300);
+                $('#password').focus();
+                return false;
+            }
+            return true;
+        }
+    })
+</script>
+</body>
+
+</html>
