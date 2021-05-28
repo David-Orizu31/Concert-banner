@@ -277,7 +277,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="card" style="min-width: 750px;">
-                            <ul class="nav nav-tabs" role="tablist">
+                            <ul class="nav nav-tabs" role="tablist" id="Mytabs">
                                 <li role="presentation">
                                     <a href="#home" aria-controls="home" role="tab" id="tab_basic" data-toggle="tab"
                                        class="active">1.
@@ -285,7 +285,7 @@
                                 </li>
                                 <li role="presentation">
                                     <a href="#profile" aria-controls="profile" id="tab_profile" role="tab" data-toggle="tab"
-                                       >2. Set
+                                       disabled>2. Set
                                         Avatar Location</a>
                                 </li>
                                 <li role="presentation">
@@ -299,7 +299,7 @@
                                         Preview &amp; Publish </a>
                                 </li>
                             </ul>
-                            <div class="tab-content">
+                            <div class="tab-content" id="mytabcontent">
                                 <div role="tabpanel" class="tab-pane active" id="home">
                                     <form role="form">
                                         <input type="hidden" name="cover_photo" id="cover_photo">
@@ -315,7 +315,7 @@
                                             </div>
                                             <div class="form-group">
                                                 <label for="category">Category</label><br>
-                                                <select class="select_search" name="tags">
+                                                <select class="select_search" name="tags" id="category">
                                                     <option value="">Select Category</option>
                                                                                                     <option value="1">Business</option>
                                                                                                     <option value="2">Tech</option>
@@ -1273,7 +1273,7 @@ $(document).ready(function () {
                                                     <div class="radio">
                                                         <label class="no_bold ticket_charge_trigger">
                                                             <input type="radio" name="visibility" value="public"
-                                                                   checked="checked"> &nbsp; Public - Accessible via the
+                                                                   checked="checked" > &nbsp; Public - Accessible via the
                                                             homepage, banner listings and direct link
                                                         </label>
                                                     </div>
@@ -1290,12 +1290,27 @@ $(document).ready(function () {
         
                                             </div>
                                             <div class="form-group">
-                                                <label for="exampleInputFile">Banner Image</label><br>
+                                                <label for="file" style="cursor: pointer;">Upload Image</label><br>
+                                                <input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)"><br>
+                                                    <img id="output" style="max-width: 750px;">
+                                                
+
+                                                <script>
+                                                    var loadFile = function(event) {
+                                                        var image = document.getElementById('output');
+                                                        image.src = URL.createObjectURL(event.target.files[0]);
+                                                    };
+                                                    </script>
+
+                                                <!--  <div id="cover_preview"
+                                                     class="box-header with-border box-image center-crop"
+                                                     style="display: inline-block;background-image: url('../img/placeholder.png');max-width: 750px;margin-bottom: 15px;"></div>
+                                                    <label for="exampleInputFile">Banner Image</label><br>
                                                 <div id="cover_preview"
                                                      class="box-header with-border box-image center-crop"
                                                      style="display: inline-block;background-image: url('../img/placeholder.png');max-width: 750px;margin-bottom: 15px;">
                                                     <img src="../img/placeholder.png">
-                                                </div>
+                                                </div> -->
                                                 <div class="n_listed" style="margin-top: -10px">
                                                     <div class="progress progress-xxs hidden" id="cover_progress"
                                                          style="max-width: 750px;margin: -15px 0 0px">
@@ -1308,10 +1323,20 @@ $(document).ready(function () {
                                                          class="progress_msg">
                                                         Note: Maximum size of the image should be 10MB
                                                     </div>
-                                                    <a href="javascript:void(0)" id="cover_trigger"><i
-                                                                class="mdi mdi-plus-box-outline"></i>
+                                                    <br>
+                                                    <label for="file" style="cursor: pointer;"><a><i
+                                                        class="mdi mdi-plus-box-outline"></i>
                                                         Add cover image </a> &nbsp; &nbsp;
-                                                    &nbsp; &nbsp;
+                                                        &nbsp; &nbsp;</label><br>
+                                                        <input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)">
+                                                    <p><img id="cover" style="max-width: 750px;" src="../img/placeholder.png"/></p>
+                                                    
+                                                    <script>
+                                                    var loadFile = function(event) {
+                                                        var image = document.getElementById('cover');
+                                                        image.src = URL.createObjectURL(event.target.files[0]);
+                                                    };
+                                                    </script>
                                                     <!-- <a href="javascript:void(0)"" id="remove_cover_image" class="hidden"><i
                                                                 class="mdi mdi-close"></i> Remove Image</a> -->
                                                 </div>
@@ -1330,19 +1355,18 @@ $(document).ready(function () {
                                                 </label>
                                                 <div class="row">
                                                     <div class="col-sm-4">
-                                                        <input type="text" class="form-control" id="cta" name="cta"
+                                                        <input type="text" class="form-control" id="text" name="text"
                                                                placeholder="Text"/>
                                                     </div>
                                                     <div class="col-sm-8">
-                                                        <input type="url" class="form-control" id="cta_link" name="cta_link"
-                                                               placeholder="Link"/>
+                                                        <input type="url" class="form-control required" id="url" name="url"
+                                                               placeholder="Link" />
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-        
                                         <div class="box-footer">
-                                            <button type="button" class="btn btn-info" id="btn_to_avatar" disabled>Next</button>
+                                            <button type="button" class="btn btn-info" id="submit" disabled="disabled">Next</button>
                                         </div>
                                     </form>
                                 </div>
@@ -1543,7 +1567,7 @@ $(document).ready(function () {
                                         }
                                     </style>
                                     <div class="meta-builder">
-                                        <img class="i_src" src="../img/placeholder.png"
+                                        <img  src="../img/placeholder.png"
                                              style="max-width: 750px;"/>
                                         <div id="name-builder" class="nm_controls pv_controls name-builder">Dummy Name</div>
                                     </div>
@@ -1571,7 +1595,7 @@ $(document).ready(function () {
                 </div>
             </div>
             <div class="hidden" style="display: none;">
-                <form id="cover_photo_form" method="post" action="https://getdp.co/ajax/upload?width=1024&q=100">
+                <form id="cover_photo_form" method="" action="">
                     <input type="file" name="image" accept="image/*" id="cover_photo_input">
                     <input type="hidden" id="placeholder_link" value="../img/placeholder.png">
                     <input type="hidden" id="fake_ele_link" value="../img/user.png">
@@ -1667,6 +1691,7 @@ $(document).ready(function () {
     <script src="../js/jquery.min.js"></script>
     <!-- <script src="../js/bootstrap-select.min.js"></script> -->
     
+    <script src="../js/disable-enable.js"></script>
     <script src="../js/sparkline.js"></script>
     <script src="../js/waves.js"></script>
     <script src="../js/sidebarmenu.js"></script>
@@ -1777,7 +1802,7 @@ $('.nav-tabs').on('click', 'a[disabled]', function (e) {
     e.preventDefault();
     return false;
 });
-$('#btn_to_avatar,#btn_to_avatar_').click(function () {
+$('#submit,#btn_to_avatar_').click(function () {
     $('.nav-tabs li a').removeClass('active');
     $($('.nav-tabs li')[1]).find('a').removeAttr('disabled').click();
 });
